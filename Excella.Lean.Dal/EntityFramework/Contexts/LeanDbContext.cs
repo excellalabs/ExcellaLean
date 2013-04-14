@@ -109,7 +109,7 @@
             try
             {
                 ICollection<TEntity> collection = new Collection<TEntity>(entities);
-                this.HierarchicalSaveCollection(collection);
+                //this.HierarchicalSaveCollection(collection);
             }
             catch (DbEntityValidationException ex)
             {
