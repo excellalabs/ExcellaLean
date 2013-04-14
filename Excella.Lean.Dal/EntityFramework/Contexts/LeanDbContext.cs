@@ -12,7 +12,7 @@
     using System.Reflection;
 
     using Excella.Lean.Core;
-
+    using Excella.Lean.Dal.EntityFramework.Mapping;
 
     public partial class LeanDatabase : DbContext, ILeanDatabase
     {
@@ -212,9 +212,10 @@
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            
-            //modelBuilder.Configurations.Add(new EventMap());
-
+            modelBuilder.Configurations.Add(new EventMap());
+            modelBuilder.Configurations.Add(new PersonMap());
+            modelBuilder.Configurations.Add(new ReservationRequestMap());
+            modelBuilder.Configurations.Add(new ReservationResultMap());
         }
     }
 }

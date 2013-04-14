@@ -2,5 +2,6 @@
 {
     public class ReservationResult : EntityBase
     {
+        public ReservationRequest ReservationRequest { get; set; }
     }
 }

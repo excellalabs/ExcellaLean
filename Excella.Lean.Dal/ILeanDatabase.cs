@@ -6,9 +6,22 @@
     using System.Linq.Expressions;
 
     using Excella.Lean.Core;
+    using Excella.Lean.Core.Models.Events;
+    using Excella.Lean.Core.Models.Shared;
 
     public interface ILeanDatabase
     {
+        // Reservation
+        IQueryable<ReservationResult> ReservationResults { get; }
+
+        IQueryable<ReservationRequest> ReservationRequests { get; }
+
+        // Person
+        IQueryable<Person> Persons { get; }
+
+        // Event
+        IQueryable<Event> Events { get; }
+
         // Global 
         IQueryable<TEntity> Select<TEntity>() where TEntity : class, IEntity;
 

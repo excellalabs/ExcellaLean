@@ -2,5 +2,8 @@
 {
     public class ReservationRequest : EntityBase
     {
+        public string RequestedBy { get; set; }
+
+        public string RequestedDate { get; set; }
     }
 }

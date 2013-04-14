@@ -62,7 +62,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntityFramework\Contexts\EventContext.cs" />
+    <Compile Include="EntityFramework\Contexts\PersonContext.cs" />
     <Compile Include="EntityFramework\Contexts\LeanDbContext.cs" />
+    <Compile Include="EntityFramework\Contexts\ReseverationContext.cs" />
+    <Compile Include="EntityFramework\Mapping\ReservationRequestMap.cs" />
+    <Compile Include="EntityFramework\Mapping\ReservationResultMap.cs" />
+    <Compile Include="EntityFramework\Mapping\PersonMap.cs" />
+    <Compile Include="EntityFramework\Mapping\EventMap.cs" />
     <Compile Include="ExtensionMethods.cs" />
     <Compile Include="ILeanDatabase.cs" />
     <Compile Include="Migrations\Configuration.cs" />
@@ -80,9 +87,7 @@
     </None>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="EntityFramework\Mapping\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
