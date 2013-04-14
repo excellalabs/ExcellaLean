@@ -1,0 +1,14 @@
+<article class="padded-pane fixed-width" id="eventsLanding">
+    <header>
+        <h1>Events</h1>
+    </header>
+    <div data-bind="visible: !events">Fetching data ... </div>
+    <section class="view-list" data-bind="foreach: events, visible: events" style="display:none">
+        <article class="record-wrapper">
+            <a href="#" data-bind="click: $root.eventClicked">
+                <h1><span data-bind="text: EventId"></span>: <span data-bind="text: Person.LastFirstName"></span></h1>
+                <h2 data-bind="text:RecordStatus"></h2>
+            </a>
+        </article>
+    </section>
+</article>

@@ -1,0 +1,56 @@
+--- paymentTrackingModel.js
++++ paymentTrackingModel.js
+@@ -26,15 +26,48 @@
+             }
+             return entity;
+         };
+-    
+    
+         ko.bindingHandlers.date = {
+-            update: function(element, valueAccessor, allBindingsAccessor, viewModel) {
++            init: function (element, valueAccessor) {
++                var value = valueAccessor();
++                $(element).keyup(function (event) {
++                    var pattern1 = "\\d|/";
++                    var regex1 = new RegExp(pattern1);
++                    if (regex1.test(String.fromCharCode(event.keyCode))) {
++                        var pattern2 = "^\\d{1,2}/\\d{1,2}/\\d{4}$";
++                        var regex2 = new RegExp(pattern2);
++                        var text = $(element).val();
++                        if (regex2.test(text)) {
++                            var split = text.split("/");
++                            value(new Date(split[2], split[0] - 1, split[1]));
++                        } else {
++                            value(null);
++                        }
++                    }
++                });
++                $(element).keypress(function (event) {
++                    var pattern1 = "\\d|/";
++                    var regex1 = new RegExp(pattern1);
++                    if (regex1.test(String.fromCharCode(event.keyCode)) || event.which == 8) {
++                    } else {
++                        event.preventDefault();
++                    }
++                });
++                
++            },
++            update: function (element, valueAccessor, allBindingsAccessor, viewModel) {
+                 var value = valueAccessor(),
+                     allBindings = allBindingsAccessor();
+-                var valueUnwrapped = ko.utils.unwrapObservable(value);
+-                var pattern = allBindings.format || 'MM/dd/yyyy';
+-                $(element).text(valueUnwrapped.toString(pattern));
++
++                if (value != null) {
++                    var valueUnwrapped = ko.utils.unwrapObservable(value);
++                    if (valueUnwrapped != null) {
++                        var pattern = allBindings.format;
++                        if(pattern == null) pattern = 'MM/dd/yyyy';
++                        $(element).text(valueUnwrapped.toString(pattern));
++                        $(element).val(valueUnwrapped.toString(pattern));
++                    }
++                }
+             }
+         };
+     

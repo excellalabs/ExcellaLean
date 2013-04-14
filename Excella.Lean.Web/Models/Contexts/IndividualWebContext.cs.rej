@@ -1,0 +1,62 @@
+--- IndividualWebContext.cs
++++ IndividualWebContext.cs
+@@ -4,12 +4,8 @@
+     using System.Collections.Generic;
+     using System.Linq;
+ 
+-    using AutoMapper;
+-    using AutoMapper.QueryableExtensions;
+-
++    using Nreca.Apps7.RsPlatform.Core.Models.Shared;
+     using Nreca.Apps7.RsPlatform.Domain.Core.Repositories;
+-    using Nreca.Apps7.RsPlatform.Web.Models.Individual;
+-    using ModelShared = Nreca.Apps7.RsPlatform.Core.Models.Shared;
+ 
+     public class IndividualWebContext : WebContext, IIndividualWebContext
+     {
+@@ -27,8 +23,7 @@
+         {
+             get
+             {
+-                Mapper.CreateMap<ModelShared.Individual, Individual>();
+-                return this.individualRecordRepository.GetAll<ModelShared.Individual>().Project().To<Individual>();
++                return this.individualRecordRepository.GetAll<Individual>();
+             }
+         }
+ 
+@@ -48,32 +43,19 @@
+         //TODO: Change to return single Individual
+         public IQueryable<Individual> GetBySsn(string ssn)
+         {
+-            //TODO: Move CreateMap to WebProfile
+-            Mapper.CreateMap<ModelShared.Individual, Individual>()
+-                  .ForMember(destination => destination.IndividualStatus, options => options.MapFrom(source => source.IndividualStatus.Description))
+-                  .ForMember(destination => destination.RecordStatus, options => options.MapFrom(source => source.RecordStatus.Description))
+-                  .ForMember(destination => destination.Category, options => options.MapFrom(source => source.IndividualCategory.Description))
+-                  .ForMember(destination => destination.MaritalStatus, options => options.MapFrom(source => source.MaritalStatus.Description))
+-                  .ForMember(destination => destination.Gender, options => options.MapFrom(source => source.Gender.Description));
+             return this.individualRecordRepository
+-                .GetIndividualsBySocialSecurityNumber(ssn)
+-                .Project().To<Individual>();
++                .GetIndividualsBySocialSecurityNumber(ssn);
+         }
+ 
+ 
+         public Individual GetIndvBySsn(string ssn)
+         {
+-            var indv = this.individualRecordRepository.GetIndividualsBySocialSecurityNumber(ssn).FirstOrDefault();
+-            return AutoMapper.Mapper.Map<Individual>(indv);
++            return this.individualRecordRepository.GetIndividualsBySocialSecurityNumber(ssn).FirstOrDefault();
+         }
+ 
+         public IQueryable<Eligibility> GetEligibilityByIndividualId(int individualId)
+         {
+-            Mapper.CreateMap<ModelShared.Eligibility, Eligibility>()
+-                  .ForMember(e => e.EligibilityStatus, m => m.MapFrom(d => d.EligibilityStatus.Description));
+-
+-            return this.eligibilityRepository.GetByIndividualId(individualId).Project().To<Eligibility>();
++            return this.eligibilityRepository.GetByIndividualId(individualId);
+         }
+-
+     }
+ }

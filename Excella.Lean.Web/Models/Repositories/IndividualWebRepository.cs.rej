@@ -1,0 +1,20 @@
+--- IndividualWebRepository.cs
++++ IndividualWebRepository.cs
+@@ -7,8 +7,8 @@
+ 
+     using Breeze.WebApi;
+ 
++    using Nreca.Apps7.RsPlatform.Core.Models.Shared;
+     using Nreca.Apps7.RsPlatform.Web.Models.Contexts;
+-    using Nreca.Apps7.RsPlatform.Web.Models.Individual;
+ 
+     public class IndividualWebRepository : MetadataWebRepository, IIndividualWebRepository
+     {
+@@ -29,7 +29,6 @@
+             return this.webContext.GetBySsn(ssn);
+         }
+ 
+-
+         public Individual GetIndvBySsn(string ssn)
+         {
+             return this.webContext.GetIndvBySsn(ssn);

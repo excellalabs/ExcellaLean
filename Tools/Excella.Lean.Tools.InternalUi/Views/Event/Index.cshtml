@@ -1,0 +1,27 @@
+﻿@model InternalUi.EventNotificationService.PayableEvent
+
+@{
+    ViewBag.Title = "Create New Tracking Record";
+}
+
+<h2>Create New Tracking Record</h2>
+
+@using (Html.BeginForm("Notify", "Event")) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>PayableEvent</legend>
+        
+        <p>
+            <input type="submit" value="Create Tracking Record" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,30 @@
+--- Address.cs
++++ Address.cs
+@@ -1,27 +0,0 @@
+-﻿namespace Nreca.Apps7.RsPlatform.Web.Models.Individual
+-{
+-    using System;
+-
+-    public class Address
+-    {
+-        public virtual int Id { get; set; }
+-
+-        public virtual string LastUpdateBy { get; set; }
+-
+-        public virtual DateTime LastUpdateDate { get; set; }
+-
+-        public DateTime AddressEffFromDate { get; set; }
+-
+-        public DateTime? AddressEffToDate { get; set; }
+-
+-        public string AddressLine1 { get; set; }
+-
+-        public string AddressLine2 { get; set; }
+-
+-        public string City { get; set; }
+-
+-        public string State { get; set; }
+-
+-        public string ZipCode { get; set; }
+-    }
+-}

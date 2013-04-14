@@ -1,0 +1,24 @@
+--- WebContext.cs
++++ WebContext.cs
+@@ -71,13 +71,16 @@
+         {
+             foreach (var itemType in saveMap.Keys)
+             {
+-                List<EntityInfo> items;
+-                if (!saveMap.TryGetValue(itemType, out items))
++                if (this.DomainRepositoryMapping.ContainsKey(itemType))
+                 {
+-                    continue;
++                    List<EntityInfo> items;
++                    if (!saveMap.TryGetValue(itemType, out items))
++                    {
++                        continue;
++                    }
++
++                    this.SaveRecordsHelper(items);
+                 }
+-
+-                this.SaveRecordsHelper(items);
+             }
+         }
+ 

@@ -1,0 +1,26 @@
+--- Telephone.cs
++++ Telephone.cs
+@@ -1,23 +0,0 @@
+-﻿namespace Nreca.Apps7.RsPlatform.Web.Models.Individual
+-{
+-    using System;
+-
+-    public class Telephone
+-    {
+-        public virtual int Id { get; set; }
+-
+-        public virtual string LastUpdateBy { get; set; }
+-
+-        public virtual DateTime LastUpdateDate { get; set; }
+-
+-        public DateTime TelephoneAddressEffFromDate { get; set; }
+-
+-        public string TelephoneCountryCode { get; set; }
+-
+-        public string TelephoneCallingAreaCode { get; set; }
+-
+-        public string TelephoneNumberString { get; set; }
+-
+-        public string TelephoneExtension { get; set; }
+-    }
+-}

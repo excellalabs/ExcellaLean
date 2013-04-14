@@ -1,0 +1,22 @@
+--- Note.cs
++++ Note.cs
+@@ -1,19 +0,0 @@
+-﻿namespace Nreca.Apps7.RsPlatform.Web.Models.Individual
+-{
+-    using System;
+-
+-    public class Note
+-    {
+-        public virtual int Id { get; set; }
+-
+-        public virtual string LastUpdateBy { get; set; }
+-
+-        public virtual DateTime LastUpdateDate { get; set; }
+-
+-        public int NoteTypeId { get; set; }
+-
+-        public string NoteText { get; set; }
+-
+-        public virtual string NoteTypeDescription { get; set; }
+-    }
+-}

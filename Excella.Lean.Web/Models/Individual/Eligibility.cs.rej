@@ -1,0 +1,21 @@
+--- Eligibility.cs
++++ Eligibility.cs
+@@ -1,17 +0,0 @@
+-﻿namespace Nreca.Apps7.RsPlatform.Web.Models.Individual
+-{
+-    using System;
+-
+-    using Nreca.Apps7.RsPlatform.Core;
+-
+-    public class Eligibility : AEntity
+-    {
+-        public DateTime ParticipationStartDate { get; set; }
+-
+-        public DateTime? EarliestEligibilityDate { get; set; }
+-
+-        public string EligibilityStatus { get; set; }
+-
+-        public string EligibilityReasonDesc { get; set; }
+-    }
+-}
+\ No newline at end of file

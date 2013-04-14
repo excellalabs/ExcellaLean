@@ -1,0 +1,72 @@
+﻿@{
+    ViewBag.Title = "Excella Lean";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+        @Scripts.Render("~/bundles/mvvm")
+    
+        <script type="text/javascript">
+            //This is a very lightweight bootstrap error handler - see libs/excella/errorLogger for a full featured logger
+            window.onerror = function (msg, url, line) {
+                var logErrorUrl = '@Url.Action( "LogJavaScriptError", "Home" )';
+                toastr.error(msg);
+                $.post(logErrorUrl, { message: msg });
+            };
+        </script>
+    </head>
+    <body>
+
+        <section id="lean-content">
+            @if (@User.Identity.IsAuthenticated)
+            {
+                <section class="appcontent"></section>
+            }
+            else
+            {
+                <p>You're not an authorized user!</p>
+            }
+        </section>
+
+        <nav id="lean-nav">
+            <ul>
+                <li class="active">Module A</li>
+                    <ul>
+                        <li><a href="#/events/all">Events</a></li>
+                    </ul>
+                <li class="active">Module B</li>
+                <li>Module C</li>
+                <li>Module D</li>
+            </ul>
+            <div id="userSettings">
+                @if (Request.IsAuthenticated) {
+                    <text>
+                        Hey there, @User.Identity.Name
+                    </text>
+                }
+            </div>
+        </nav>
+
+        <header id="lean-header">
+            <h1><a href="#/">@ViewBag.Title</a></h1>
+            <img src="~/Images/loading.gif" id="loadingIndicator" style="position: absolute; right:0; top:0; display: none;"/>
+        </header>
+    
+        <script type="text/javascript" data-main="Scripts/app/main" src="~/Scripts/lib/require/require.js"></script>
+
+        <footer id="lean-footer">
+            <p>&copy; @DateTime.Now.Year - Excella</p>
+        </footer>
+
+    </body>
+
+</html>
+

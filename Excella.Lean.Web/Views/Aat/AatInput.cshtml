@@ -1,0 +1,20 @@
+﻿@model Excella.Lean.Web.Models.Aat.Inputs
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AatInput</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("AatInput", "Aat", FormMethod.Post))
+        {
+            @Html.EditorFor(i => i.UserId);
+            
+            <input type="submit" class="button" id="submitButton" value="Submit"/>
+        }
+    </div>
+</body>
+</html>

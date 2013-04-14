@@ -1,0 +1,53 @@
+--- Individual.cs
++++ Individual.cs
+@@ -1,50 +0,0 @@
+-﻿namespace Nreca.Apps7.RsPlatform.Web.Models.Individual
+-{
+-    using System;
+-    using System.Collections.Generic;
+-
+-    using Nreca.Apps7.RsPlatform.Core;
+-
+-    public class Individual : AEntity
+-    {
+-        public string SocialSecurityNumber { get; set; }
+-        
+-        public string FirstName { get; set; }
+-
+-        public string MiddleName { get; set; }
+-
+-        public string LastName { get; set; }
+-
+-        public string Suffix { get; set; }
+-
+-        public string Prefix { get; set; }
+-
+-        public DateTime? DateOfBirth { get; set; }
+-
+-        public string Designation { get; set; }
+-
+-        public string Title { get; set; }
+-
+-        public string Gender { get; set; }
+-
+-        public string Category { get; set; }
+-
+-        public string MaritalStatus { get; set; }
+-
+-        public string IndividualStatus { get; set; }
+-
+-        public string RecordStatus { get; set; }
+-
+-        public Address CurrentAddress { get; private set; }
+-
+-        public Telephone CurrentTelephone { get; private set; }
+-
+-        public virtual ICollection<Note> Notes { get; set; }
+-
+-        public virtual ICollection<Address> Addresses { get; set; }
+-
+-        public virtual ICollection<Telephone> Telephones { get; set; }
+-
+-        public virtual ICollection<Email> Emails { get; set; }
+-    }
+-}

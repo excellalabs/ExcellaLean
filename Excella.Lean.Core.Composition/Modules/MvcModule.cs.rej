@@ -1,0 +1,11 @@
+--- MvcModule.cs
++++ MvcModule.cs
+@@ -47,7 +47,7 @@
+                 .InstancePerDependency();
+ 
+             // Dal
+-            builder.RegisterType<RsDatabase>().As<IRsDatabase>();
++            builder.RegisterType<RsDatabase>().As<IRsDatabase>().InstancePerLifetimeScope();
+ 
+             if (this.assembly != null)
+             {

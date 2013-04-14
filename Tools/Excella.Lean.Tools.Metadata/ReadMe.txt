@@ -1,0 +1,1 @@
+﻿After updating Breeze, delete Scripts and App_Start folders.

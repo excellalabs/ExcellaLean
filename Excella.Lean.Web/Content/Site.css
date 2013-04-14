@@ -1,0 +1,536 @@
+﻿/* LEAN CSS */
+
+header#lean-header {
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    margin:0;
+    padding:0;
+    height:2.5em;
+    overflow:hidden;
+    border-bottom: 1px solid #333;
+    background: inherit;
+    z-index: 999;
+}
+
+    header#lean-header h1 {
+        font-size: 1.5em;
+        height:1.5em;
+        top:50%;
+        margin-top:-0.75em;
+        position:relative;
+        margin-left:15px;
+    }
+
+    header#lean-header h1 a {
+        color: #333;
+        text-decoration: none;
+    }
+
+article.fixed-width {
+    width: 650px;
+}
+
+
+nav#lean-nav {
+    position: fixed;
+    left: 0;
+    top: 2.5em;
+    width: 10em;
+    bottom: 1.5em;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-right: 1px solid #333;
+    background: inherit;
+}
+
+    nav#lean-nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        nav#lean-nav ul li {
+            padding: 0.3em;
+            padding-left: 15px;
+            border-bottom: 1px solid #000;
+        }
+
+            nav#lean-nav ul li:hover, nav#lean-nav ul li.active {
+                background: #beefed;
+            }
+
+        nav#lean-nav ul ul {
+            font-size: 0.8em;
+            border-bottom: 1px solid #000;
+        }
+
+            nav#lean-nav ul ul li {
+                border: none;
+                padding-left:2em;
+            }
+
+#userSettings {
+    position: absolute;
+    bottom: 0;
+    padding:0.2em;
+}
+
+section#lean-content {
+    position:relative;
+    margin:2.5em 0 1.5em 10em;
+    background: inherit;
+}
+
+section.appcontent {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+    section#lean-content article.padded-pane {
+        padding:1em 1.5em 0.5em;
+    }
+
+    section#lean-content header {
+        margin-bottom: 1em;
+        border-bottom:0.3em solid #dedede;
+        padding-bottom:0.5em;
+    }
+
+        section#lean-content header h1 {
+            font-size: 1.3em;
+            margin: 0;
+        }
+        section#lean-content header h2 {
+            font-size: 1.2em;
+            margin: 0;
+        }
+        section#lean-content header h3 {
+            font-size: 1.1em;
+            margin: 0;
+        }
+        
+        section#lean-content header.rich-header {
+            position: relative;
+        }
+
+        section#lean-content header.rich-header h1 {
+            margin-bottom:0.2em;
+        }
+
+        section#lean-content header.rich-header h2 {
+            font-weight: normal;
+        }
+
+        section#lean-content header.rich-header h3 {
+            position:absolute;
+            margin:0;
+            font-weight:normal;
+            right:0;
+            bottom:0.5em;
+        }
+
+        section#lean-content header.floating {
+            position:fixed;
+            top:2.5em;
+            left:9.9em;
+            height:4.5em;
+            width:inherit;
+            background: #fff;
+            margin: 0 1.6em;
+            z-index: 666;
+        }
+
+            section#lean-content header.floating h1 {
+                margin: 0.3em 0;
+            }
+            section#lean-content header.floating h2 {
+                margin: 0.3em 0;
+                font-weight: normal;
+            }
+            section#lean-content header.floating h3 {
+                position: absolute;
+                top: 2em;
+                right: 0em;
+                margin-top: -0.5em;
+                font-weight: normal;
+            }
+
+table.fieldset thead th:first-child {
+    text-align: left;
+}
+
+table.fieldset tbody th {
+    text-align: left;
+}
+
+table.fieldset tbody th:first-child {
+    text-align: right;
+}
+
+table.fieldset tbody th:first-child:after {
+    content: ':';
+    padding-right: 1em;
+}
+
+footer#lean-footer {
+    position: fixed;
+    margin: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1.5em;
+    overflow:none;
+    border-top:1px solid #333;
+    text-align:center;
+    background: inherit;
+}
+
+footer#lean-footer p {
+    margin: 0.1em;
+    font-size:0.8em;
+}
+
+body, input, button, textarea {
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    font-size: 1em;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+button, input[type=submit] {
+    border: 1px solid #dedede;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/*#region Header */
+
+header {
+    margin: 0em;
+    position: relative;
+}
+
+    header p {
+        font-size: 2.5em;
+        margin: 0;
+    }
+
+/* #userSettings {
+    float: right;
+}
+
+    #userSettings > form:before {
+        content: ' | ';
+    }
+
+    #userSettings form {
+        display: inline;
+    } */
+
+#menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+    #menu li {
+        display: inline-block;
+    }
+
+    #menu li:not(:first-child) {
+        margin-left: .8em;
+    }
+
+/*#endregion */
+
+/*#region forms */
+
+#changePasswordForm input,
+#registerForm input,
+#loginForm input {
+    border: 1px solid #dedede;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+    #changePasswordForm input[type=text], #changePasswordForm input[type=password],
+    #registerForm input[type=text], #registerForm input[type=password],
+    #loginForm input[type=text], #loginForm input[type=password] {
+        background: white;
+        width: 220px;
+    }
+
+#loginForm input[type=checkbox]{
+    border: none;
+}
+
+#changePasswordForm input[type=submit] {
+    margin-bottom: .8em;
+}
+
+#registerPanel{
+    display: none;
+    position: relative;
+    float: left;
+    text-align: left;
+    padding: 25px;
+}
+
+#loginPanel {
+    display: block;
+    position: relative;
+    float: left;
+    text-align: left;
+    padding: 25px;
+    width: 600px;
+}
+
+#registerPanel h2,
+#loginPanel h2 {
+    padding-bottom: .5em;
+    margin: 0;
+}
+
+#registerPanel a,
+#loginPanel a {
+    color: navy;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#registerPanel p,
+#loginPanel p {
+    clear: both;
+}
+
+#localLoginPanel {
+    border-right: solid 2px #c8c8c8;
+    float: left;
+    width: 45%;
+    text-align: left;
+}
+
+#socialLoginPanel {
+    margin-left: 40px;
+    float: left;
+    width: 45%;
+    text-align: left;
+}
+
+    #socialLoginPanel h2 {
+        margin-bottom:  5px;
+    }
+
+#socialLoginList button {
+    margin-bottom: 12px;
+}
+
+fieldset {
+    border: none;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: left;
+    display: inline;
+}
+
+    fieldset legend {
+        display: none;
+    }
+
+    fieldset label:not(.checkbox) {
+        display: block;
+        text-align: left;
+    }
+
+    fieldset ol {
+        padding: 0;
+        margin: 0 0 8px 0;
+        list-style: none;
+    }
+
+        fieldset ol li {
+            padding-bottom: 5px;
+        }
+
+ol.round {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/*#endregion */
+
+#main-content {
+    min-height: 400px;
+    text-align: center;
+}
+
+/*#region info and errors */
+.error {
+    float: none;
+    color: red;
+    padding-left: .5em;
+    vertical-align: top;
+}
+
+.validation-summary-errors {
+    color: red;
+    list-style: none;
+    width: 220px;
+    font-size: .8em;
+}
+
+.validation-summary-errors ul{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/*#endregion */
+
+/*#region Unauthorized */
+
+#unauthorized {
+    margin: 3em 0;
+    text-align: center;
+}
+
+    #unauthorized ul {
+        list-style: none;
+        padding: 0;
+        margin: 3em 0;
+    }
+
+    #unauthorized li {
+        display: inline-block;
+        padding: 6px 20px;
+        background-color: #dedede;
+        border: 1px solid gray;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+        #unauthorized li:first-child {
+            margin-right: 2em;
+        }
+
+/*#endregion */
+
+/*#region Footer */
+
+footer {
+    clear: both;
+    margin: 5em 5em .7em 0;
+}
+
+/*#endregion */
+
+/*#region table layout */
+
+.OneColumnLayout,
+.TwoColumnLayout,
+.ThreeColumnLayout {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.OneColumnLayout .ColumnOne {
+    width: 99%;
+}
+
+.TwoColumnLayout .ColumnOne,
+.TwoColumnLayout .ColumnTwo {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 49%;
+}
+
+.TwoColumnLayout .ColumnTwo {
+    margin-left: 1%;
+}
+
+.ThreeColumnLayout .ColumnOne,
+.ThreeColumnLayout .ColumnTwo,
+.ThreeColumnLayout .ColumnThree {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 32%;
+}
+
+.ThreeColumnLayout .ColumnTwo {
+    margin-left: 1%;
+    width: 33%;
+}
+
+.ThreeColumnLayout .ColumnThree {
+    margin-left: 1%;
+}
+
+.Field {
+    margin: 5px;
+    padding: 0;
+    width: 100%;
+}
+
+.Field label {
+    float: left;
+    font-weight: bold;
+    width: 50%;
+}
+
+.Field label:after {
+    content: ":";
+}
+
+.Field span {
+    width: 50%;
+    float: right;
+}
+            
+.Field span input, 
+.Field span textarea, 
+.Field span select {
+    width: 100%;
+}
+
+.Field:after, .clearFix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*#endregion */
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        margin: .2em 0;
+    }
+
+    header {
+        text-align: center;
+    }
+}

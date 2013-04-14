@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>Test Data Center:</h1>
+                <h2>Click on one of the links below to start.</h2>
+            </hgroup>
+        </div>
+    </section>
+}
+ <nav>
+    <ul id="testsMenu">
+        <li>@Html.ActionLink("Create Event", "Index", "Event")</li>
+    </ul>
+</nav>

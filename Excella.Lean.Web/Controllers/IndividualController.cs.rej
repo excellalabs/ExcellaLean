@@ -1,0 +1,11 @@
+--- IndividualController.cs
++++ IndividualController.cs
+@@ -7,7 +7,7 @@
+ 
+     using Newtonsoft.Json.Linq;
+ 
+-    using Nreca.Apps7.RsPlatform.Web.Models.Individual;
++    using Nreca.Apps7.RsPlatform.Core.Models.Shared;
+     using Nreca.Apps7.RsPlatform.Web.Models.Repositories;
+ 
+     [BreezeController]

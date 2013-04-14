@@ -1,0 +1,26 @@
+--- WebModelBuilder.cs
++++ WebModelBuilder.cs
+@@ -1,8 +1,9 @@
+ ﻿namespace Nreca.Apps7.RsPlatform.Web.Models
+ {
+-    using Nreca.Apps7.RsPlatform.Web.Models.Individual;
++    using Nreca.Apps7.RsPlatform.Web.Models.Calculation;
+     using Nreca.Apps7.RsPlatform.Web.Models.PaymentTracking;
+-    using Nreca.Apps7.RsPlatform.Web.Models.Calculation;
++
++    using CoreModels = Nreca.Apps7.RsPlatform.Core.Models.Shared;
+ 
+     public static class WebModelBuilder
+     {
+@@ -12,8 +13,8 @@
+             modelBuilder.Entity<CalculationRequest>();
+             modelBuilder.Entity<CalculationResult>();
+ 
+-            modelBuilder.Entity<Eligibility>();
+-            modelBuilder.Entity<Individual.Individual>();
++            modelBuilder.Entity<CoreModels.Eligibility>();
++            modelBuilder.Entity<CoreModels.Individual>();
+         }
+     }
+ }
+\ No newline at end of file

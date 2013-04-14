@@ -1,0 +1,11 @@
+--- IIndividualWebRepository.cs
++++ IIndividualWebRepository.cs
+@@ -2,7 +2,7 @@
+ {
+     using System.Linq;
+ 
+-    using Nreca.Apps7.RsPlatform.Web.Models.Individual;
++    using Nreca.Apps7.RsPlatform.Core.Models.Shared;
+ 
+     public interface IIndividualWebRepository : IWebRepository
+     {

@@ -1,0 +1,15 @@
+--- Site.css
++++ Site.css
+@@ -161,7 +161,11 @@
+                 font-weight: normal;
+             }
+ 
+-table.fieldset th {
++table.fieldset thead th:first-child {
++    text-align: left;
++}
++
++table.fieldset tbody th {
+     text-align: left;
+ }
+ 

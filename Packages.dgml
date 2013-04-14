@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Tools\InternalUi" Label="InternalUi" Category="Project" />
+    <Node Id="AutoFixture 3.0.2" Label="AutoFixture 3.0.2" Category="Package" />
+    <Node Id="AutoMapper 2.2.1-ci9001" Label="AutoMapper 2.2.1-ci9001" Category="Package" />
+    <Node Id="EntityFramework 5.0.0" Label="EntityFramework 5.0.0" Category="Package" />
+    <Node Id="jQuery 1.8.2" Label="jQuery 1.8.2" Category="Package" />
+    <Node Id="jQuery.UI.Combined 1.9.2" Label="jQuery.UI.Combined 1.9.2" Category="Package" />
+    <Node Id="jQuery.Validation 1.10.0" Label="jQuery.Validation 1.10.0" Category="Package" />
+    <Node Id="knockoutjs 2.2.0" Label="knockoutjs 2.2.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.Mvc 4.0.20710.0" Label="Microsoft.AspNet.Mvc 4.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.Mvc.FixedDisplayModes 1.0.0" Label="Microsoft.AspNet.Mvc.FixedDisplayModes 1.0.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.Razor 2.0.20715.0" Label="Microsoft.AspNet.Razor 2.0.20715.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.Web.Optimization 1.0.0" Label="Microsoft.AspNet.Web.Optimization 1.0.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebApi 4.0.20710.0" Label="Microsoft.AspNet.WebApi 4.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Label="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebApi.Core 4.0.20710.0" Label="Microsoft.AspNet.WebApi.Core 4.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebApi.OData 0.3.0-rc" Label="Microsoft.AspNet.WebApi.OData 0.3.0-rc" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Label="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebPages 2.0.20710.0" Label="Microsoft.AspNet.WebPages 2.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.Data.Edm 5.2.0-rc1" Label="Microsoft.Data.Edm 5.2.0-rc1" Category="Package" />
+    <Node Id="Microsoft.Data.OData 5.2.0-rc1" Label="Microsoft.Data.OData 5.2.0-rc1" Category="Package" />
+    <Node Id="Microsoft.jQuery.Unobtrusive.Ajax 2.0.20710.0" Label="Microsoft.jQuery.Unobtrusive.Ajax 2.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.jQuery.Unobtrusive.Validation 2.0.20710.0" Label="Microsoft.jQuery.Unobtrusive.Validation 2.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.Net.Http 2.0.20710.0" Label="Microsoft.Net.Http 2.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.Web.Infrastructure 1.0.0.0" Label="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package" />
+    <Node Id="Modernizr 2.6.2" Label="Modernizr 2.6.2" Category="Package" />
+    <Node Id="Newtonsoft.Json 4.5.10" Label="Newtonsoft.Json 4.5.10" Category="Package" />
+    <Node Id="System.Spatial 5.2.0-rc1" Label="System.Spatial 5.2.0-rc1" Category="Package" />
+    <Node Id="WebGrease 1.3.0" Label="WebGrease 1.3.0" Category="Package" />
+    <Node Id="Tools\Nreca.Apps7.RsPlatform.Tools.MetadataGenerator" Label="Nreca.Apps7.RsPlatform.Tools.MetadataGenerator" Category="Project" />
+    <Node Id="Breeze.WebApi 1.1.3" Label="Breeze.WebApi 1.1.3" Category="Package" />
+    <Node Id="EntityFramework 5.0.0" Label="EntityFramework 5.0.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebApi 4.0.20710.0" Label="Microsoft.AspNet.WebApi 4.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Label="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebApi.Core 4.0.20710.0" Label="Microsoft.AspNet.WebApi.Core 4.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Label="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.Net.Http 2.0.20710.0" Label="Microsoft.Net.Http 2.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.Web.Infrastructure 1.0.0.0" Label="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package" />
+    <Node Id="Newtonsoft.Json 4.5.11" Label="Newtonsoft.Json 4.5.11" Category="Package" />
+    <Node Id="WebActivator 1.5.3" Label="WebActivator 1.5.3" Category="Package" />
+    <Node Id="Nreca.Apps7.RsPlatform.ServiceReferences" Label="Nreca.Apps7.RsPlatform.ServiceReferences" Category="Project" />
+    <Node Id="CommonServiceLocator 1.0" Label="CommonServiceLocator 1.0" Category="Package" />
+    <Node Id="EnterpriseLibrary.Common 5.0.505.0" Label="EnterpriseLibrary.Common 5.0.505.0" Category="Package" />
+    <Node Id="EnterpriseLibrary.Validation 5.0.505.0" Label="EnterpriseLibrary.Validation 5.0.505.0" Category="Package" />
+    <Node Id="Unity 2.1.505.2" Label="Unity 2.1.505.2" Category="Package" />
+    <Node Id="Unity.Interception 2.1.505.2" Label="Unity.Interception 2.1.505.2" Category="Package" />
+    <Node Id="Nreca.Apps7.RsPlatform.Api" Label="Nreca.Apps7.RsPlatform.Api" Category="Project" />
+    <Node Id="Autofac 3.0.1" Label="Autofac 3.0.1" Category="Package" />
+    <Node Id="Autofac.Wcf 3.0.0" Label="Autofac.Wcf 3.0.0" Category="Package" />
+    <Node Id="AutoMapper 2.2.1-ci9001" Label="AutoMapper 2.2.1-ci9001" Category="Package" />
+    <Node Id="EntityFramework 5.0.0" Label="EntityFramework 5.0.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.Mvc 4.0.20710.0" Label="Microsoft.AspNet.Mvc 4.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.Razor 2.0.20715.0" Label="Microsoft.AspNet.Razor 2.0.20715.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebPages 2.0.20710.0" Label="Microsoft.AspNet.WebPages 2.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.Web.Infrastructure 1.0.0.0" Label="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package" />
+    <Node Id="Nreca.Apps7.RsPlatform.Core.Composition" Label="Nreca.Apps7.RsPlatform.Core.Composition" Category="Project" />
+    <Node Id="Autofac 3.0.1" Label="Autofac 3.0.1" Category="Package" />
+    <Node Id="Autofac.Mvc4 3.0.0" Label="Autofac.Mvc4 3.0.0" Category="Package" />
+    <Node Id="CommonServiceLocator 1.0" Label="CommonServiceLocator 1.0" Category="Package" />
+    <Node Id="EnterpriseLibrary.Common 5.0.505.0" Label="EnterpriseLibrary.Common 5.0.505.0" Category="Package" />
+    <Node Id="EnterpriseLibrary.Validation 5.0.505.0" Label="EnterpriseLibrary.Validation 5.0.505.0" Category="Package" />
+    <Node Id="EntityFramework 5.0.0" Label="EntityFramework 5.0.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.Mvc 4.0.20710.0" Label="Microsoft.AspNet.Mvc 4.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.Razor 2.0.20715.0" Label="Microsoft.AspNet.Razor 2.0.20715.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebPages 2.0.20710.0" Label="Microsoft.AspNet.WebPages 2.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.Web.Infrastructure 1.0.0.0" Label="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package" />
+    <Node Id="Unity 2.1.505.2" Label="Unity 2.1.505.2" Category="Package" />
+    <Node Id="Unity.Interception 2.1.505.2" Label="Unity.Interception 2.1.505.2" Category="Package" />
+    <Node Id="Nreca.Apps7.RsPlatform.Tests" Label="Nreca.Apps7.RsPlatform.Tests" Category="Project" />
+    <Node Id="Autofac 3.0.1" Label="Autofac 3.0.1" Category="Package" />
+    <Node Id="AutoFixture 3.0.2" Label="AutoFixture 3.0.2" Category="Package" />
+    <Node Id="AutoFixture.AutoMoq 3.0.2" Label="AutoFixture.AutoMoq 3.0.2" Category="Package" />
+    <Node Id="AutoMapper 2.2.1-ci9001" Label="AutoMapper 2.2.1-ci9001" Category="Package" />
+    <Node Id="Castle.Core 3.1.0" Label="Castle.Core 3.1.0" Category="Package" />
+    <Node Id="Chromium.ChromeDriver 26.0.1383.0" Label="Chromium.ChromeDriver 26.0.1383.0" Category="Package" />
+    <Node Id="CommonServiceLocator 1.0" Label="CommonServiceLocator 1.0" Category="Package" />
+    <Node Id="EnterpriseLibrary.Common 5.0.505.0" Label="EnterpriseLibrary.Common 5.0.505.0" Category="Package" />
+    <Node Id="EnterpriseLibrary.Validation 5.0.505.0" Label="EnterpriseLibrary.Validation 5.0.505.0" Category="Package" />
+    <Node Id="EntityFramework 5.0.0" Label="EntityFramework 5.0.0" Category="Package" />
+    <Node Id="Moq 4.0.10827" Label="Moq 4.0.10827" Category="Package" />
+    <Node Id="Moq.Contrib 0.3" Label="Moq.Contrib 0.3" Category="Package" />
+    <Node Id="NUnit 2.6.2" Label="NUnit 2.6.2" Category="Package" />
+    <Node Id="Selenium.Support 2.29.1" Label="Selenium.Support 2.29.1" Category="Package" />
+    <Node Id="Selenium.WebDriver 2.29.1" Label="Selenium.WebDriver 2.29.1" Category="Package" />
+    <Node Id="SpecFlow 1.9.0" Label="SpecFlow 1.9.0" Category="Package" />
+    <Node Id="SpecFlow.NUnit 1.1.1" Label="SpecFlow.NUnit 1.1.1" Category="Package" />
+    <Node Id="Unity 2.1.505.2" Label="Unity 2.1.505.2" Category="Package" />
+    <Node Id="Unity.Interception 2.1.505.2" Label="Unity.Interception 2.1.505.2" Category="Package" />
+    <Node Id="Nreca.Apps7.RsPlatform.Fakes" Label="Nreca.Apps7.RsPlatform.Fakes" Category="Project" />
+    <Node Id="CommonServiceLocator 1.0" Label="CommonServiceLocator 1.0" Category="Package" />
+    <Node Id="EnterpriseLibrary.Common 5.0.505.0" Label="EnterpriseLibrary.Common 5.0.505.0" Category="Package" />
+    <Node Id="EnterpriseLibrary.Validation 5.0.505.0" Label="EnterpriseLibrary.Validation 5.0.505.0" Category="Package" />
+    <Node Id="Unity 2.1.505.2" Label="Unity 2.1.505.2" Category="Package" />
+    <Node Id="Unity.Interception 2.1.505.2" Label="Unity.Interception 2.1.505.2" Category="Package" />
+    <Node Id="Nreca.Apps7.RsPlatform.Web" Label="Nreca.Apps7.RsPlatform.Web" Category="Project" />
+    <Node Id="Autofac 3.0.1" Label="Autofac 3.0.1" Category="Package" />
+    <Node Id="Autofac.Mvc4 3.0.0" Label="Autofac.Mvc4 3.0.0" Category="Package" />
+    <Node Id="Autofac.WebApi 3.0.0" Label="Autofac.WebApi 3.0.0" Category="Package" />
+    <Node Id="AutoMapper 2.2.1-ci9001" Label="AutoMapper 2.2.1-ci9001" Category="Package" />
+    <Node Id="Breeze.WebApi 1.1.3" Label="Breeze.WebApi 1.1.3" Category="Package" />
+    <Node Id="CommonServiceLocator 1.0" Label="CommonServiceLocator 1.0" Category="Package" />
+    <Node Id="elmah 1.2.2" Label="elmah 1.2.2" Category="Package" />
+    <Node Id="elmah.corelibrary 1.2.2" Label="elmah.corelibrary 1.2.2" Category="Package" />
+    <Node Id="EnterpriseLibrary.Common 5.0.505.0" Label="EnterpriseLibrary.Common 5.0.505.0" Category="Package" />
+    <Node Id="EnterpriseLibrary.Validation 5.0.505.0" Label="EnterpriseLibrary.Validation 5.0.505.0" Category="Package" />
+    <Node Id="EntityFramework 5.0.0" Label="EntityFramework 5.0.0" Category="Package" />
+    <Node Id="jQuery 1.9.1" Label="jQuery 1.9.1" Category="Package" />
+    <Node Id="jQuery.Migrate 1.1.0" Label="jQuery.Migrate 1.1.0" Category="Package" />
+    <Node Id="jQuery.UI.Combined 1.10.0" Label="jQuery.UI.Combined 1.10.0" Category="Package" />
+    <Node Id="jQuery.Validation 1.11.0" Label="jQuery.Validation 1.11.0" Category="Package" />
+    <Node Id="knockoutjs 2.2.1" Label="knockoutjs 2.2.1" Category="Package" />
+    <Node Id="Microsoft.AspNet.Mvc 4.0.20710.0" Label="Microsoft.AspNet.Mvc 4.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.Mvc.FixedDisplayModes 1.0.0" Label="Microsoft.AspNet.Mvc.FixedDisplayModes 1.0.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.Razor 2.0.20715.0" Label="Microsoft.AspNet.Razor 2.0.20715.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.Web.Optimization 1.0.0" Label="Microsoft.AspNet.Web.Optimization 1.0.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebApi 4.0.20710.0" Label="Microsoft.AspNet.WebApi 4.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Label="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebApi.Core 4.0.20710.0" Label="Microsoft.AspNet.WebApi.Core 4.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebApi.OData 0.3.0-rc" Label="Microsoft.AspNet.WebApi.OData 0.3.0-rc" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebApi.Tracing 0.3.0-rc" Label="Microsoft.AspNet.WebApi.Tracing 0.3.0-rc" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Label="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.AspNet.WebPages 2.0.20710.0" Label="Microsoft.AspNet.WebPages 2.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.Data.Edm 5.2.0" Label="Microsoft.Data.Edm 5.2.0" Category="Package" />
+    <Node Id="Microsoft.Data.OData 5.2.0" Label="Microsoft.Data.OData 5.2.0" Category="Package" />
+    <Node Id="Microsoft.jQuery.Unobtrusive.Ajax 2.0.20710.0" Label="Microsoft.jQuery.Unobtrusive.Ajax 2.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.jQuery.Unobtrusive.Validation 2.0.20710.0" Label="Microsoft.jQuery.Unobtrusive.Validation 2.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.Net.Http 2.0.20710.0" Label="Microsoft.Net.Http 2.0.20710.0" Category="Package" />
+    <Node Id="Microsoft.Web.Infrastructure 1.0.0.0" Label="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package" />
+    <Node Id="Modernizr 2.6.2" Label="Modernizr 2.6.2" Category="Package" />
+    <Node Id="Newtonsoft.Json 4.5.11" Label="Newtonsoft.Json 4.5.11" Category="Package" />
+    <Node Id="phantomjs.exe 1.8.1" Label="phantomjs.exe 1.8.1" Category="Package" />
+    <Node Id="QUnitTeamCityDriver 1.0.0" Label="QUnitTeamCityDriver 1.0.0" Category="Package" />
+    <Node Id="System.Spatial 5.2.0" Label="System.Spatial 5.2.0" Category="Package" />
+    <Node Id="Unity 2.1.505.2" Label="Unity 2.1.505.2" Category="Package" />
+    <Node Id="Unity.Interception 2.1.505.2" Label="Unity.Interception 2.1.505.2" Category="Package" />
+    <Node Id="WebActivator 1.5.3" Label="WebActivator 1.5.3" Category="Package" />
+    <Node Id="WebGrease 1.3.0" Label="WebGrease 1.3.0" Category="Package" />
+    <Node Id="Nreca.Apps7.RsPlatform.Dal" Label="Nreca.Apps7.RsPlatform.Dal" Category="Project" />
+    <Node Id="AutoMapper 2.2.1-ci9001" Label="AutoMapper 2.2.1-ci9001" Category="Package" />
+    <Node Id="EntityFramework 5.0.0" Label="EntityFramework 5.0.0" Category="Package" />
+    <Node Id="Nreca.Apps7.RsPlatform.Core" Label="Nreca.Apps7.RsPlatform.Core" Category="Project" />
+    <Node Id="CommonServiceLocator 1.0" Label="CommonServiceLocator 1.0" Category="Package" />
+    <Node Id="EnterpriseLibrary.Common 5.0.505.0" Label="EnterpriseLibrary.Common 5.0.505.0" Category="Package" />
+    <Node Id="EnterpriseLibrary.Validation 5.0.505.0" Label="EnterpriseLibrary.Validation 5.0.505.0" Category="Package" />
+    <Node Id="Unity 2.1.505.2" Label="Unity 2.1.505.2" Category="Package" />
+    <Node Id="Unity.Interception 2.1.505.2" Label="Unity.Interception 2.1.505.2" Category="Package" />
+    <Node Id="Nreca.Apps7.RsPlatform.Domain" Label="Nreca.Apps7.RsPlatform.Domain" Category="Project" />
+    <Node Id="AutoMapper 2.2.1-ci9001" Label="AutoMapper 2.2.1-ci9001" Category="Package" />
+    <Node Id="CommonServiceLocator 1.0" Label="CommonServiceLocator 1.0" Category="Package" />
+    <Node Id="EnterpriseLibrary.Common 5.0.505.0" Label="EnterpriseLibrary.Common 5.0.505.0" Category="Package" />
+    <Node Id="EnterpriseLibrary.Validation 5.0.505.0" Label="EnterpriseLibrary.Validation 5.0.505.0" Category="Package" />
+    <Node Id="Unity 2.1.505.2" Label="Unity 2.1.505.2" Category="Package" />
+    <Node Id="Unity.Interception 2.1.505.2" Label="Unity.Interception 2.1.505.2" Category="Package" />
+  </Nodes>
+  <Links>
+    <Link Source="jQuery.UI.Combined 1.9.2" Target="jQuery 1.8.2" Category="Package Dependency" />
+    <Link Source="jQuery.Validation 1.10.0" Target="jQuery 1.8.2" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.Mvc 4.0.20710.0" Target="Microsoft.AspNet.WebPages 2.0.20710.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.Mvc 4.0.20710.0" Target="Microsoft.AspNet.Razor 2.0.20715.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.Mvc.FixedDisplayModes 1.0.0" Target="Microsoft.AspNet.Mvc 4.0.20710.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.Web.Optimization 1.0.0" Target="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.Web.Optimization 1.0.0" Target="WebGrease 1.3.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi 4.0.20710.0" Target="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Target="Microsoft.Net.Http 2.0.20710.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Target="Newtonsoft.Json 4.5.10" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.Core 4.0.20710.0" Target="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.OData 0.3.0-rc" Target="Microsoft.Net.Http 2.0.20710.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.OData 0.3.0-rc" Target="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.OData 0.3.0-rc" Target="Microsoft.AspNet.WebApi.Core 4.0.20710.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.OData 0.3.0-rc" Target="Microsoft.Data.OData 5.2.0-rc1" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Target="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Target="Microsoft.AspNet.WebApi.Core 4.0.20710.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebPages 2.0.20710.0" Target="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebPages 2.0.20710.0" Target="Microsoft.AspNet.Razor 2.0.20715.0" Category="Package Dependency" />
+    <Link Source="Microsoft.Data.OData 5.2.0-rc1" Target="System.Spatial 5.2.0-rc1" Category="Package Dependency" />
+    <Link Source="Microsoft.Data.OData 5.2.0-rc1" Target="Microsoft.Data.Edm 5.2.0-rc1" Category="Package Dependency" />
+    <Link Source="Microsoft.jQuery.Unobtrusive.Ajax 2.0.20710.0" Target="jQuery 1.8.2" Category="Package Dependency" />
+    <Link Source="Microsoft.jQuery.Unobtrusive.Validation 2.0.20710.0" Target="jQuery.Validation 1.10.0" Category="Package Dependency" />
+    <Link Source="Tools\InternalUi" Target="AutoFixture 3.0.2" Category="Installed Package" />
+    <Link Source="Tools\InternalUi" Target="AutoMapper 2.2.1-ci9001" Category="Installed Package" />
+    <Link Source="Tools\InternalUi" Target="EntityFramework 5.0.0" Category="Installed Package" />
+    <Link Source="Tools\InternalUi" Target="jQuery.UI.Combined 1.9.2" Category="Installed Package" />
+    <Link Source="Tools\InternalUi" Target="knockoutjs 2.2.0" Category="Installed Package" />
+    <Link Source="Tools\InternalUi" Target="Microsoft.AspNet.Mvc.FixedDisplayModes 1.0.0" Category="Installed Package" />
+    <Link Source="Tools\InternalUi" Target="Microsoft.AspNet.Web.Optimization 1.0.0" Category="Installed Package" />
+    <Link Source="Tools\InternalUi" Target="Microsoft.AspNet.WebApi 4.0.20710.0" Category="Installed Package" />
+    <Link Source="Tools\InternalUi" Target="Microsoft.AspNet.WebApi.OData 0.3.0-rc" Category="Installed Package" />
+    <Link Source="Tools\InternalUi" Target="Microsoft.jQuery.Unobtrusive.Ajax 2.0.20710.0" Category="Installed Package" />
+    <Link Source="Tools\InternalUi" Target="Microsoft.jQuery.Unobtrusive.Validation 2.0.20710.0" Category="Installed Package" />
+    <Link Source="Tools\InternalUi" Target="Modernizr 2.6.2" Category="Installed Package" />
+    <Link Source="Breeze.WebApi 1.1.3" Target="Microsoft.AspNet.WebApi 4.0.20710.0" Category="Package Dependency" />
+    <Link Source="Breeze.WebApi 1.1.3" Target="WebActivator 1.5.3" Category="Package Dependency" />
+    <Link Source="Breeze.WebApi 1.1.3" Target="EntityFramework 5.0.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi 4.0.20710.0" Target="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Target="Microsoft.Net.Http 2.0.20710.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Target="Newtonsoft.Json 4.5.11" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.Core 4.0.20710.0" Target="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Target="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Target="Microsoft.AspNet.WebApi.Core 4.0.20710.0" Category="Package Dependency" />
+    <Link Source="WebActivator 1.5.3" Target="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package Dependency" />
+    <Link Source="Tools\Nreca.Apps7.RsPlatform.Tools.MetadataGenerator" Target="Breeze.WebApi 1.1.3" Category="Installed Package" />
+    <Link Source="EnterpriseLibrary.Common 5.0.505.0" Target="Unity.Interception 2.1.505.2" Category="Package Dependency" />
+    <Link Source="EnterpriseLibrary.Validation 5.0.505.0" Target="EnterpriseLibrary.Common 5.0.505.0" Category="Package Dependency" />
+    <Link Source="Unity 2.1.505.2" Target="CommonServiceLocator 1.0" Category="Package Dependency" />
+    <Link Source="Unity.Interception 2.1.505.2" Target="Unity 2.1.505.2" Category="Package Dependency" />
+    <Link Source="Nreca.Apps7.RsPlatform.ServiceReferences" Target="EnterpriseLibrary.Validation 5.0.505.0" Category="Installed Package" />
+    <Link Source="Autofac.Wcf 3.0.0" Target="Autofac 3.0.1" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.Mvc 4.0.20710.0" Target="Microsoft.AspNet.WebPages 2.0.20710.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.Mvc 4.0.20710.0" Target="Microsoft.AspNet.Razor 2.0.20715.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebPages 2.0.20710.0" Target="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebPages 2.0.20710.0" Target="Microsoft.AspNet.Razor 2.0.20715.0" Category="Package Dependency" />
+    <Link Source="Nreca.Apps7.RsPlatform.Api" Target="Autofac.Wcf 3.0.0" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Api" Target="AutoMapper 2.2.1-ci9001" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Api" Target="EntityFramework 5.0.0" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Api" Target="Microsoft.AspNet.Mvc 4.0.20710.0" Category="Installed Package" />
+    <Link Source="Autofac.Mvc4 3.0.0" Target="Autofac 3.0.1" Category="Package Dependency" />
+    <Link Source="EnterpriseLibrary.Common 5.0.505.0" Target="Unity.Interception 2.1.505.2" Category="Package Dependency" />
+    <Link Source="EnterpriseLibrary.Validation 5.0.505.0" Target="EnterpriseLibrary.Common 5.0.505.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.Mvc 4.0.20710.0" Target="Microsoft.AspNet.WebPages 2.0.20710.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.Mvc 4.0.20710.0" Target="Microsoft.AspNet.Razor 2.0.20715.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebPages 2.0.20710.0" Target="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebPages 2.0.20710.0" Target="Microsoft.AspNet.Razor 2.0.20715.0" Category="Package Dependency" />
+    <Link Source="Unity 2.1.505.2" Target="CommonServiceLocator 1.0" Category="Package Dependency" />
+    <Link Source="Unity.Interception 2.1.505.2" Target="Unity 2.1.505.2" Category="Package Dependency" />
+    <Link Source="Nreca.Apps7.RsPlatform.Core.Composition" Target="Autofac.Mvc4 3.0.0" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Core.Composition" Target="EnterpriseLibrary.Validation 5.0.505.0" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Core.Composition" Target="EntityFramework 5.0.0" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Core.Composition" Target="Microsoft.AspNet.Mvc 4.0.20710.0" Category="Installed Package" />
+    <Link Source="AutoFixture.AutoMoq 3.0.2" Target="AutoFixture 3.0.2" Category="Package Dependency" />
+    <Link Source="AutoFixture.AutoMoq 3.0.2" Target="Moq 4.0.10827" Category="Package Dependency" />
+    <Link Source="EnterpriseLibrary.Common 5.0.505.0" Target="Unity.Interception 2.1.505.2" Category="Package Dependency" />
+    <Link Source="EnterpriseLibrary.Validation 5.0.505.0" Target="EnterpriseLibrary.Common 5.0.505.0" Category="Package Dependency" />
+    <Link Source="Moq.Contrib 0.3" Target="Moq 4.0.10827" Category="Package Dependency" />
+    <Link Source="Selenium.Support 2.29.1" Target="Selenium.WebDriver 2.29.1" Category="Package Dependency" />
+    <Link Source="Selenium.Support 2.29.1" Target="Castle.Core 3.1.0" Category="Package Dependency" />
+    <Link Source="SpecFlow.NUnit 1.1.1" Target="SpecFlow 1.9.0" Category="Package Dependency" />
+    <Link Source="SpecFlow.NUnit 1.1.1" Target="NUnit 2.6.2" Category="Package Dependency" />
+    <Link Source="Unity 2.1.505.2" Target="CommonServiceLocator 1.0" Category="Package Dependency" />
+    <Link Source="Unity.Interception 2.1.505.2" Target="Unity 2.1.505.2" Category="Package Dependency" />
+    <Link Source="Nreca.Apps7.RsPlatform.Tests" Target="Autofac 3.0.1" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Tests" Target="AutoFixture.AutoMoq 3.0.2" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Tests" Target="AutoMapper 2.2.1-ci9001" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Tests" Target="Chromium.ChromeDriver 26.0.1383.0" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Tests" Target="EnterpriseLibrary.Validation 5.0.505.0" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Tests" Target="EntityFramework 5.0.0" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Tests" Target="Moq.Contrib 0.3" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Tests" Target="Selenium.Support 2.29.1" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Tests" Target="SpecFlow.NUnit 1.1.1" Category="Installed Package" />
+    <Link Source="EnterpriseLibrary.Common 5.0.505.0" Target="Unity.Interception 2.1.505.2" Category="Package Dependency" />
+    <Link Source="EnterpriseLibrary.Validation 5.0.505.0" Target="EnterpriseLibrary.Common 5.0.505.0" Category="Package Dependency" />
+    <Link Source="Unity 2.1.505.2" Target="CommonServiceLocator 1.0" Category="Package Dependency" />
+    <Link Source="Unity.Interception 2.1.505.2" Target="Unity 2.1.505.2" Category="Package Dependency" />
+    <Link Source="Nreca.Apps7.RsPlatform.Fakes" Target="EnterpriseLibrary.Validation 5.0.505.0" Category="Installed Package" />
+    <Link Source="Autofac.Mvc4 3.0.0" Target="Autofac 3.0.1" Category="Package Dependency" />
+    <Link Source="Autofac.WebApi 3.0.0" Target="Autofac 3.0.1" Category="Package Dependency" />
+    <Link Source="Breeze.WebApi 1.1.3" Target="Microsoft.AspNet.WebApi 4.0.20710.0" Category="Package Dependency" />
+    <Link Source="Breeze.WebApi 1.1.3" Target="WebActivator 1.5.3" Category="Package Dependency" />
+    <Link Source="Breeze.WebApi 1.1.3" Target="EntityFramework 5.0.0" Category="Package Dependency" />
+    <Link Source="elmah 1.2.2" Target="elmah.corelibrary 1.2.2" Category="Package Dependency" />
+    <Link Source="EnterpriseLibrary.Common 5.0.505.0" Target="Unity.Interception 2.1.505.2" Category="Package Dependency" />
+    <Link Source="EnterpriseLibrary.Validation 5.0.505.0" Target="EnterpriseLibrary.Common 5.0.505.0" Category="Package Dependency" />
+    <Link Source="jQuery.Migrate 1.1.0" Target="jQuery 1.9.1" Category="Package Dependency" />
+    <Link Source="jQuery.UI.Combined 1.10.0" Target="jQuery 1.9.1" Category="Package Dependency" />
+    <Link Source="jQuery.Validation 1.11.0" Target="jQuery 1.9.1" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.Mvc 4.0.20710.0" Target="Microsoft.AspNet.WebPages 2.0.20710.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.Mvc 4.0.20710.0" Target="Microsoft.AspNet.Razor 2.0.20715.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.Mvc.FixedDisplayModes 1.0.0" Target="Microsoft.AspNet.Mvc 4.0.20710.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.Web.Optimization 1.0.0" Target="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.Web.Optimization 1.0.0" Target="WebGrease 1.3.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi 4.0.20710.0" Target="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Target="Microsoft.Net.Http 2.0.20710.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Target="Newtonsoft.Json 4.5.11" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.Core 4.0.20710.0" Target="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.OData 0.3.0-rc" Target="Microsoft.Net.Http 2.0.20710.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.OData 0.3.0-rc" Target="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.OData 0.3.0-rc" Target="Microsoft.AspNet.WebApi.Core 4.0.20710.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.OData 0.3.0-rc" Target="Microsoft.Data.OData 5.2.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.Tracing 0.3.0-rc" Target="Microsoft.AspNet.WebApi.Core 4.0.20710.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Target="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Target="Microsoft.AspNet.WebApi.Core 4.0.20710.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebPages 2.0.20710.0" Target="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package Dependency" />
+    <Link Source="Microsoft.AspNet.WebPages 2.0.20710.0" Target="Microsoft.AspNet.Razor 2.0.20715.0" Category="Package Dependency" />
+    <Link Source="Microsoft.Data.OData 5.2.0" Target="System.Spatial 5.2.0" Category="Package Dependency" />
+    <Link Source="Microsoft.Data.OData 5.2.0" Target="Microsoft.Data.Edm 5.2.0" Category="Package Dependency" />
+    <Link Source="Microsoft.jQuery.Unobtrusive.Ajax 2.0.20710.0" Target="jQuery 1.9.1" Category="Package Dependency" />
+    <Link Source="Microsoft.jQuery.Unobtrusive.Validation 2.0.20710.0" Target="jQuery.Validation 1.11.0" Category="Package Dependency" />
+    <Link Source="Unity 2.1.505.2" Target="CommonServiceLocator 1.0" Category="Package Dependency" />
+    <Link Source="Unity.Interception 2.1.505.2" Target="Unity 2.1.505.2" Category="Package Dependency" />
+    <Link Source="WebActivator 1.5.3" Target="Microsoft.Web.Infrastructure 1.0.0.0" Category="Package Dependency" />
+    <Link Source="Nreca.Apps7.RsPlatform.Web" Target="Autofac.Mvc4 3.0.0" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Web" Target="Autofac.WebApi 3.0.0" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Web" Target="AutoMapper 2.2.1-ci9001" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Web" Target="Breeze.WebApi 1.1.3" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Web" Target="elmah 1.2.2" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Web" Target="EnterpriseLibrary.Validation 5.0.505.0" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Web" Target="jQuery.Migrate 1.1.0" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Web" Target="jQuery.UI.Combined 1.10.0" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Web" Target="knockoutjs 2.2.1" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Web" Target="Microsoft.AspNet.Mvc.FixedDisplayModes 1.0.0" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Web" Target="Microsoft.AspNet.Web.Optimization 1.0.0" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Web" Target="Microsoft.AspNet.WebApi.OData 0.3.0-rc" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Web" Target="Microsoft.AspNet.WebApi.Tracing 0.3.0-rc" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Web" Target="Microsoft.jQuery.Unobtrusive.Ajax 2.0.20710.0" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Web" Target="Microsoft.jQuery.Unobtrusive.Validation 2.0.20710.0" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Web" Target="Modernizr 2.6.2" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Web" Target="phantomjs.exe 1.8.1" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Web" Target="QUnitTeamCityDriver 1.0.0" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Dal" Target="AutoMapper 2.2.1-ci9001" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Dal" Target="EntityFramework 5.0.0" Category="Installed Package" />
+    <Link Source="EnterpriseLibrary.Common 5.0.505.0" Target="Unity.Interception 2.1.505.2" Category="Package Dependency" />
+    <Link Source="EnterpriseLibrary.Validation 5.0.505.0" Target="EnterpriseLibrary.Common 5.0.505.0" Category="Package Dependency" />
+    <Link Source="Unity 2.1.505.2" Target="CommonServiceLocator 1.0" Category="Package Dependency" />
+    <Link Source="Unity.Interception 2.1.505.2" Target="Unity 2.1.505.2" Category="Package Dependency" />
+    <Link Source="Nreca.Apps7.RsPlatform.Core" Target="EnterpriseLibrary.Validation 5.0.505.0" Category="Installed Package" />
+    <Link Source="EnterpriseLibrary.Common 5.0.505.0" Target="Unity.Interception 2.1.505.2" Category="Package Dependency" />
+    <Link Source="EnterpriseLibrary.Validation 5.0.505.0" Target="EnterpriseLibrary.Common 5.0.505.0" Category="Package Dependency" />
+    <Link Source="Unity 2.1.505.2" Target="CommonServiceLocator 1.0" Category="Package Dependency" />
+    <Link Source="Unity.Interception 2.1.505.2" Target="Unity 2.1.505.2" Category="Package Dependency" />
+    <Link Source="Nreca.Apps7.RsPlatform.Domain" Target="AutoMapper 2.2.1-ci9001" Category="Installed Package" />
+    <Link Source="Nreca.Apps7.RsPlatform.Domain" Target="EnterpriseLibrary.Validation 5.0.505.0" Category="Installed Package" />
+  </Links>
+  <Categories>
+    <Category Id="Project" />
+    <Category Id="Package" />
+  </Categories>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Project" ValueLabel="True">
+      <Condition Expression="HasCategory('Project')" />
+      <Setter Property="Background" Value="Blue" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Package Dependency" ValueLabel="True">
+      <Condition Expression="HasCategory('Package Dependency')" />
+      <Setter Property="Background" Value="Yellow" />
+    </Style>
+  </Styles>
+</DirectedGraph>

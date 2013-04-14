@@ -1,0 +1,65 @@
+﻿article#eventDetails {
+    max-width: 1000px;
+}
+
+article#eventDetails section.subsection {
+    border:2px solid #dedede;
+    padding:1em;
+    margin:0.2em 0 0.8em;
+}
+
+article#eventDetails section#processing {
+    position:relative;
+}
+
+    article#eventDetails section#processing span.step {
+        display:block;
+        padding:0.2em 0;
+    }
+
+        article#eventDetails section#processing span.step span.indicator {
+            width: 0.6em;
+            height: 0.6em;
+            border-radius: 0.6em;
+            border: 2px solid #333;
+            display: inline-block;
+            background: #333;
+            margin: 0 0.5em;
+        }
+
+    article#eventDetails section#processing span#nextStep {
+        font-size:1.1em;
+        padding-bottom:0.5em;
+        margin-bottom:0.5em;
+        border-bottom: 2px solid #dedede;
+    }
+
+        article#eventDetails section#processing span#nextStep span.indicator {
+            background: none;
+        }
+
+    article#eventDetails table.eventData {
+        font-size: 0.8em;
+    }
+
+    article#eventDetails table.eventData tbody th {
+        text-align: right;
+        vertical-align: top;
+    }
+
+    article#eventDetails table.eventData tbody th:after {
+        content: ':';
+    }
+
+    article#eventDetails table.eventData tbody td {
+        padding-left: 1em;
+    }
+
+    article#eventDetails div.eventData {
+        display: inline-block;
+        width: 48%;
+    }
+
+        article#eventDetails div.eventData:nth-child(odd) {
+            margin-right: 1em;
+        }

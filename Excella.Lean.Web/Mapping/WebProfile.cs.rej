@@ -1,0 +1,103 @@
+--- WebProfile.cs
++++ WebProfile.cs
+@@ -7,7 +7,7 @@
+ 
+     using DomainCoreModels = Nreca.Apps7.RsPlatform.Core.Models.Shared;
+     using WebCalculationModels = Nreca.Apps7.RsPlatform.Web.Models.Calculation;
+-    using WebIndividualModels = Nreca.Apps7.RsPlatform.Web.Models.Individual;
++    //using WebIndividualModels = Nreca.Apps7.RsPlatform.Web.Models.Individual;
+     using WebPaymentModels = Nreca.Apps7.RsPlatform.Web.Models.PaymentTracking;
+ 
+     public class WebProfile : Profile
+@@ -22,52 +22,52 @@
+ 
+         protected override void Configure()
+         {
+-            Mapper.CreateMap<DomainCoreModels.Individual, WebIndividualModels.Individual>()
+-                  .ForMember(w => w.Designation, o => o.Ignore())
+-                  .ForMember(w => w.Category, d => d.MapFrom(domain => domain.IndividualCategory.Code))
+-                  .ForMember(w => w.IndividualStatus, d => d.MapFrom(domain => domain.IndividualStatus.Code))
+-                  .ForMember(w => w.Gender, d => d.MapFrom(domain => domain.Gender.Code))
+-                  .ForMember(d => d.MaritalStatus, d => d.MapFrom(domain => domain.MaritalStatus.Code))
+-                  .ForMember(d => d.RecordStatus, d => d.MapFrom(domain => domain.RecordStatus.Code))
+-                  .ForMember(d => d.CurrentAddress, map => map.Ignore())
+-                  .ForMember(d => d.CurrentTelephone, map => map.Ignore())
+-                  .ForMember(dest => dest.IndividualStatus, map => map.MapFrom(source => source.IndividualStatus.Description));
++            //Mapper.CreateMap<DomainCoreModels.Individual, DomainCoreModels.Individual>()
++            //      .ForMember(w => w.Designation, o => o.Ignore())
++            //      .ForMember(w => w.Category, d => d.MapFrom(domain => domain.IndividualCategory.Code))
++            //      .ForMember(w => w.IndividualStatus, d => d.MapFrom(domain => domain.IndividualStatus.Code))
++            //      .ForMember(w => w.Gender, d => d.MapFrom(domain => domain.Gender.Code))
++            //      .ForMember(d => d.MaritalStatus, d => d.MapFrom(domain => domain.MaritalStatus.Code))
++            //      .ForMember(d => d.RecordStatus, d => d.MapFrom(domain => domain.RecordStatus.Code))
++            //      .ForMember(d => d.CurrentAddress, map => map.Ignore())
++            //      .ForMember(d => d.CurrentTelephone, map => map.Ignore())
++            //      .ForMember(dest => dest.IndividualStatus, map => map.MapFrom(source => source.IndividualStatus.Description));
+ 
+ 
+-            Mapper.CreateMap<WebIndividualModels.Individual, DomainCoreModels.Individual>()
+-                  .ForMember(d => d.RecordStatus, w => w.Ignore())
+-                  .ForMember(d => d.NrecaExternalId, w => w.Ignore())
+-                  .ForMember(d => d.IndividualCategory, w => w.Ignore())
+-                  .ForMember(d => d.IndividualType, w => w.Ignore())
+-                  .ForMember(d => d.Gender, w => w.Ignore())
+-                  .ForMember(d => d.MaritalStatus, w => w.Ignore())
+-                  .ForMember(d => d.IndividualStatus, w => w.Ignore());
++            //Mapper.CreateMap<WebIndividualModels.Individual, DomainCoreModels.Individual>()
++            //      .ForMember(d => d.RecordStatus, w => w.Ignore())
++            //      .ForMember(d => d.NrecaExternalId, w => w.Ignore())
++            //      .ForMember(d => d.IndividualCategory, w => w.Ignore())
++            //      .ForMember(d => d.IndividualType, w => w.Ignore())
++            //      .ForMember(d => d.Gender, w => w.Ignore())
++            //      .ForMember(d => d.MaritalStatus, w => w.Ignore())
++            //      .ForMember(d => d.IndividualStatus, w => w.Ignore());
+ 
+-            Mapper.CreateMap<DomainCoreModels.Note, WebIndividualModels.Note>();
+-            Mapper.CreateMap<WebIndividualModels.Note, DomainCoreModels.Note>()
+-                .ForMember(dest => dest.NoteType, source => source.Ignore());
++            //Mapper.CreateMap<DomainCoreModels.Note, WebIndividualModels.Note>();
++            //Mapper.CreateMap<WebIndividualModels.Note, DomainCoreModels.Note>()
++            //    .ForMember(dest => dest.NoteType, source => source.Ignore());
+ 
+-            Mapper.CreateMap<DomainCoreModels.Email, WebIndividualModels.Email>();
+-            Mapper.CreateMap<WebIndividualModels.Email, DomainCoreModels.Email>()
+-                .ForMember(dest => dest.EmailAddressType, source => source.Ignore());
++            //Mapper.CreateMap<DomainCoreModels.Email, WebIndividualModels.Email>();
++            //Mapper.CreateMap<WebIndividualModels.Email, DomainCoreModels.Email>()
++            //    .ForMember(dest => dest.EmailAddressType, source => source.Ignore());
+ 
+-            Mapper.CreateMap<DomainCoreModels.Address, WebIndividualModels.Address>();
+-            Mapper.CreateMap<WebIndividualModels.Address, DomainCoreModels.Address>()
+-                .ForMember(dest => dest.AddressEffFromDate, source => source.Ignore())
+-                .ForMember(dest => dest.AddressEffToDate, source => source.Ignore())
+-                .ForMember(dest => dest.AddressType, source => source.Ignore())
+-                .ForMember(dest => dest.Country, source => source.Ignore())
+-                .ForMember(dest => dest.Zip_4, source => source.Ignore());
++            //Mapper.CreateMap<DomainCoreModels.Address, WebIndividualModels.Address>();
++            //Mapper.CreateMap<WebIndividualModels.Address, DomainCoreModels.Address>()
++            //    .ForMember(dest => dest.AddressEffFromDate, source => source.Ignore())
++            //    .ForMember(dest => dest.AddressEffToDate, source => source.Ignore())
++            //    .ForMember(dest => dest.AddressType, source => source.Ignore())
++            //    .ForMember(dest => dest.Country, source => source.Ignore())
++            //    .ForMember(dest => dest.Zip_4, source => source.Ignore());
+ 
+-            Mapper.CreateMap<DomainCoreModels.Telephone, WebIndividualModels.Telephone>();
+-            Mapper.CreateMap<WebIndividualModels.Telephone, DomainCoreModels.Telephone>()
+-                .ForMember(dest => dest.TelephoneAddressEffFromDate, source => source.Ignore())
+-                .ForMember(dest => dest.TelephoneCountryCode, source => source.Ignore())
+-                .ForMember(dest => dest.TelephoneExtension, source => source.Ignore())
+-                .ForMember(dest => dest.TelephoneType, source => source.Ignore());
++            //Mapper.CreateMap<DomainCoreModels.Telephone, WebIndividualModels.Telephone>();
++            //Mapper.CreateMap<WebIndividualModels.Telephone, DomainCoreModels.Telephone>()
++            //    .ForMember(dest => dest.TelephoneAddressEffFromDate, source => source.Ignore())
++            //    .ForMember(dest => dest.TelephoneCountryCode, source => source.Ignore())
++            //    .ForMember(dest => dest.TelephoneExtension, source => source.Ignore())
++            //    .ForMember(dest => dest.TelephoneType, source => source.Ignore());
+ 
+-            Mapper.CreateMap<DomainCoreModels.Eligibility, WebIndividualModels.Eligibility>()
+-                      .ForMember(e => e.EligibilityStatus, m => m.MapFrom(d => d.EligibilityStatus.Code));
++            //Mapper.CreateMap<DomainCoreModels.Eligibility, WebIndividualModels.Eligibility>()
++            //          .ForMember(e => e.EligibilityStatus, m => m.MapFrom(d => d.EligibilityStatus.Code));
+ 
+             Mapper.CreateMap<OptionFormRequest, WebPaymentModels.OptionFormRequest>();
+             Mapper.CreateMap<WebPaymentModels.OptionFormRequest, OptionFormRequest>();
