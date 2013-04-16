@@ -1,11 +1,10 @@
-﻿namespace InternalUi.Controllers
+﻿namespace Excella.Lean.Tools.InternalUi.Controllers
 {
-    using System.Collections.Generic;
-    using System.Linq;
     using System.Web.Mvc;
 
     using Excella.Lean.Core.Models.Events;
     using Excella.Lean.Dal.EntityFramework.Contexts;
+    using Excella.Lean.Domain.Shared;
 
     using Ploeh.AutoFixture;
 
@@ -31,11 +30,11 @@
         {
             this.ViewBag.Message = "Event Notification Trigger";
 
-            var client = new EventNotificationServiceClient();
+            /*var client = new EventNotificationServiceClient();
             var request = new NotifyEventRequest(myEvent);
             client.NotifyEvent(request);
 
-            client.Close();
+            client.Close();*/
 
             return this.View();
         }

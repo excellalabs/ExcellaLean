@@ -8,7 +8,7 @@
     using Breeze.WebApi;
 
     using Excella.Lean.Core;
-    using Excella.Lean.Domain.Core;
+    using Excella.Lean.Domain.Shared;
 
     public abstract class WebContext
     {

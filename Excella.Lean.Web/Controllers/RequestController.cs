@@ -15,11 +15,9 @@
 
         // POST ~/api/Request/RequestReservation
         [HttpPost]
-        public async Task<ReservationResult> RequestCalc(ReservationRequest request)
+        public async Task<ReservationResult> RequestReservation(ReservationRequest request)
         {
-            var result = await 
-            return result;
+            return new ReservationResult();
         }
-
     }
 }

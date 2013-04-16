@@ -7,10 +7,7 @@
     using Autofac.Integration.Wcf;
 
     using Excella.Lean.Api.Mapping;
-    using Excella.Lean.Api.ServiceContracts;
-    using Excella.Lean.Api.ServiceContracts.Impl;
     using Excella.Lean.Core.Composition.Modules;
-    using Excella.Lean.Domain.Mapping;
 
     public class Global : HttpApplication
     {
@@ -34,7 +31,7 @@
         {
             // register dependencies
             var builder = new ContainerBuilder();
-            builder.RegisterType<>().As<>();
+            // builder.RegisterType<>().As<>();
           
             builder.RegisterModule<ServicesModule>();
             AutofacHostFactory.Container = builder.Build();

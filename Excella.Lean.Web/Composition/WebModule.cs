@@ -16,8 +16,8 @@
 
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<Models.Repositories.>()
-                .As<Models.Repositories.>();
+            /*builder.RegisterType<Models.Repositories.>() // TODO: what is this i don't even
+                .As<Models.Repositories.>();*/
 
 
             if (this.assembly != null)

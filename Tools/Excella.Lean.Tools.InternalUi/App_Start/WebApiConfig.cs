@@ -15,7 +15,7 @@ namespace InternalUi
                 defaults: new { id = RouteParameter.Optional }
             );
 
-            config.EnableQuerySupport();
+            // config.EnableQuerySupport(); TODO: Why does this not compile
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Excella.Lean.Tests.Ui
 {
-    class SharedPage
+    public class SharedPage
     {
     }
 }
