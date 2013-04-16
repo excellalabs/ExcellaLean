@@ -115,7 +115,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Excella.Lean.Web\Excella.Lean.Web.csproj">
-      <Project>{06898b4f-ce38-47de-a11a-f50a7567fb0c}</Project>
+      <Project>{06898B4F-CE38-47DE-A11A-F50A7567FB0C}</Project>
       <Name>Excella.Lean.Web</Name>
     </ProjectReference>
   </ItemGroup>
