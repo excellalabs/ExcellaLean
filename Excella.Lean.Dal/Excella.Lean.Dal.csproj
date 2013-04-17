@@ -76,6 +76,10 @@
     <Compile Include="Migrations\201304170037398_InitialCreate.Designer.cs">
       <DependentUpon>201304170037398_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201304170044576_AddedSsnToPerson.cs" />
+    <Compile Include="Migrations\201304170044576_AddedSsnToPerson.Designer.cs">
+      <DependentUpon>201304170044576_AddedSsnToPerson.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -94,6 +98,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201304170037398_InitialCreate.resx">
       <DependentUpon>201304170037398_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201304170044576_AddedSsnToPerson.resx">
+      <DependentUpon>201304170044576_AddedSsnToPerson.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

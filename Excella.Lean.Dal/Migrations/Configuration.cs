@@ -16,16 +16,18 @@ namespace Excella.Lean.Dal.Migrations
         {
             // This method will be called after migrating to the latest version.
             context.Persons.AddOrUpdate(
-                p => p.Id,
+                p => p.Ssn,
                 new Person
                     {
+                        Ssn = "123456001",
                         FirstName = "John",
                         LastName = "Doe",
                         LastUpdateBy = "SYSTEM",
                         LastUpdateDate = DateTime.Now,
                     },
                 new Person
-                    {
+                {
+                        Ssn = "123456002",
                         FirstName = "Jane",
                         LastName = "Smith",
                         LastUpdateBy = "SYSTEM",
