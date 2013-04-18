@@ -21,6 +21,7 @@ namespace Excella.Lean.Dal.Migrations
         private static void SeedPersons(LeanDatabase context)
         {
             context.Persons.AddOrUpdate(
+                p => p.Ssn,
                 new Person
                 {
                     Ssn = "123456001",
