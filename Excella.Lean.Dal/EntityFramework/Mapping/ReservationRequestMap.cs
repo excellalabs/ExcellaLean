@@ -20,6 +20,9 @@
             this.Property(t => t.Id).HasColumnName("ReservationRequestId");
 
             // Relationships
+            this.HasRequired(t => t.Requester)
+                .WithMany()
+                .Map(d => d.MapKey("PersonId"));
 
         }
     }

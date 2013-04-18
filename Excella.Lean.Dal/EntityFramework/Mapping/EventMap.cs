@@ -20,7 +20,9 @@
             this.Property(t => t.Id).HasColumnName("EventId");
 
             // Relationships
-
+            this.HasMany(t => t.ReservationRequests)
+                .WithRequired()
+                .Map(d => d.MapKey("EventId"));
         }
     }
 }
