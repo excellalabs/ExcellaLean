@@ -96,11 +96,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Events\IEventService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Shared\IRepositoryStore.cs" />
-    <Compile Include="Shared\RepositoryStore.cs" />
+    <Compile Include="Events\Impl\EventService.cs" />
+    <Compile Include="Shared\Impl\PersonService.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="Shared\IPersonService.cs" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>

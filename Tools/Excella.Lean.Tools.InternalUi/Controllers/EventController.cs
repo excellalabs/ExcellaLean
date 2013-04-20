@@ -7,11 +7,12 @@
     using Excella.Lean.Domain.Shared;
 
     using Ploeh.AutoFixture;
+    using Excella.Lean.Domain.Shared.Impl;
 
     [Bind(Exclude = "")]
     public class EventController : Controller
     {
-        private readonly IRepositoryStore repositoryStore;
+        private readonly PersonService personService;
 
         private readonly Fixture fixture;
 

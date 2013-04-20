@@ -9,6 +9,7 @@
 
     using Excella.Lean.Core;
     using Excella.Lean.Domain.Shared;
+    using Excella.Lean.Domain.Events;
 
     public abstract class WebContext
     {
@@ -16,18 +17,29 @@
 
         private readonly List<KeyMapping> keyMappings = new List<KeyMapping>();
 
-        private readonly IRepositoryStore repositoryStore;
+        private readonly IPersonService personService;
 
-        protected WebContext(IRepositoryStore repositoryStore)
+        private readonly IEventService eventService;
+
+        protected WebContext(IPersonService personService, IEventService eventService)
         {
-            this.repositoryStore = repositoryStore;
+            this.personService = personService;
+            this.eventService = eventService;
         }
 
-        protected IRepositoryStore RepositoryStore
+        protected IPersonService PersonService
         {
             get
             {
-                return this.repositoryStore;
+                return this.personService;
+            }
+        }
+
+        protected IEventService EventService
+        {
+            get
+            {
+                return this.eventService;
             }
         }
 
@@ -69,6 +81,7 @@
 
                 switch (ei.EntityState)
                 {
+                    // TODO: code to determine entity's type, and therefore call the right one, needs to go around here somewhere i think? sorry doguhan
                     case EntityState.Added:
                         this.RepositoryStore.Add(record);
                         this.AddMapping(ei.Entity.GetType(), record.Id);
@@ -84,7 +97,8 @@
                 }
             }
 
-            this.RepositoryStore.SaveAllChanges();
+            this.personService.SaveAllChanges();
+            this.eventService.SaveAllChanges();
         }
 
         private void AddMapping<TKey>(Type type, TKey recordId)
