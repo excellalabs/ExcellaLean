@@ -8,4 +8,8 @@ Sample for the boilerplate:
 
 - Enable Windows Authentication in IIS, disable Anonymous Authentication
 
+- Enable security in Web.config
+
 - Make sure URL has a trailing slash: e.g. http://localhost/ExcellaLean/
+
+- Observer error logs here: http://localhost/ExcellaLean/elmah.axd
