@@ -9,20 +9,20 @@
     using Excella.Lean.Domain.Events;
     using Excella.Lean.Domain.Shared;
 
-    public class EventWebContext : WebContext
+    public class EventWebContext : WebContext, IEventWebContext
     {
         private readonly IPersonService personService;
 
         private readonly IEventService eventService;
 
-        protected EventWebContext(IPersonService personService, IEventService eventService)
+        public EventWebContext(IPersonService personService, IEventService eventService)
         {
             this.personService = personService;
             this.eventService = eventService;
         }
 
         // TODO: Fix bad grammar
-        protected IQueryable<Person> Persons
+        public IQueryable<Person> Persons
         {
             get
             {
@@ -30,7 +30,7 @@
             }
         }
 
-        protected IQueryable<Event> Events
+        public IQueryable<Event> Events
         {
             get
             {
@@ -38,7 +38,7 @@
             }
         }
 
-        protected IQueryable<ReservationResult> ReservationResults
+        public IQueryable<ReservationResult> ReservationResults
         {
             get
             {

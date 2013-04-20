@@ -44,7 +44,7 @@
             else
             {
                 builder.RegisterModule(new MvcModule(this.assembly));
-                ////builder.RegisterModule<ServicesModule>();
+                builder.RegisterModule<ServicesModule>();
             }
 
             builderCustomizations(builder);

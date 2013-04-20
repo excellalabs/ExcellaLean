@@ -1,0 +1,171 @@
+﻿<error errorId="4577e054-4ea9-4009-b137-0b9777846df0" application="/LM/W3SVC/1/ROOT/ExcellaLean" host="LT71246" type="System.Configuration.ConfigurationErrorsException" message="Authorization rule names cannot contain the '*' character. (C:\Dev\GitHub\LeanEnterpriseArchitecture\Excella.Lean.Web\web.config line 34)" source="System.Configuration" detail="System.Configuration.ConfigurationErrorsException: Authorization rule names cannot contain the '*' character. (C:\Dev\GitHub\LeanEnterpriseArchitecture\Excella.Lean.Web\web.config line 34)&#xD;&#xA;   at System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)&#xD;&#xA;   at System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object&amp; result, Object&amp; resultRuntimeObject)&#xD;&#xA;   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object&amp; result, Object&amp; resultRuntimeObject)&#xD;&#xA;   at System.Configuration.BaseConfigurationRecord.GetSection(String configKey)&#xD;&#xA;   at System.Web.Configuration.RuntimeConfig.GetSectionObject(String sectionName)&#xD;&#xA;   at System.Web.Configuration.RuntimeConfig.GetSection(String sectionName, Type type, ResultsIndex index)&#xD;&#xA;   at System.Web.Configuration.RuntimeConfig.get_Authorization()&#xD;&#xA;   at System.Web.Security.UrlAuthorizationModule.OnEnter(Object source, EventArgs eventArgs)&#xD;&#xA;   at System.Web.HttpApplication.SyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;&#xA;   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)" time="2013-04-20T18:45:04.8483709Z">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CACHE_CONTROL:max-age=0&#xD;&#xA;HTTP_CONNECTION:keep-alive&#xD;&#xA;HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip,deflate,sdch&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:en-US,en;q=0.8&#xD;&#xA;HTTP_COOKIE:ASP.NET_SessionId=blrn4usmvhcoc3xq1falr1ue; __RequestVerificationToken_L1JTUGxhdGZvcm01=mThD1-A7G14u1YQAuoCjASKKz98Q1calZuKL2dK2fDwKIZ_o2DLPs39tNVD1kybIlxkIArhteAUgHUigHj7NWPEP-N01j2bP_bWt1xmBqy5dLsRFEmaT_bB-Pdd6UOeQtsRyBu1ehgbjbWZyyFXPRg2; __RequestVerificationToken=KhtQS17Z5TqeZuP36aZqs7os0Bd6fV3Ke0T9tEgjnxmkTy3UyU3YvqXnkl4tsLH62cG7mgcLdyOL6Xa_rPyL2RpyrWZUuPDEYPYAXSLEwYg1; .ASPXAUTH=EFAA18B3515B0819CDFDCC52D033A6B0A717303EE60ADD463001B65E8440FD7E401F98F1ADEC2C84A9606B6A30FB55DF79B0BA261FD84B9E2A7B770719E1789792E75A2AE3C26544AFADC4FBBB9E67405A70184A02C939A243C750AF1B05BDF4&#xD;&#xA;HTTP_HOST:localhost&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.56 Safari/537.36&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Cache-Control: max-age=0&#xD;&#xA;Connection: keep-alive&#xD;&#xA;Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#xD;&#xA;Accept-Encoding: gzip,deflate,sdch&#xD;&#xA;Accept-Language: en-US,en;q=0.8&#xD;&#xA;Cookie: ASP.NET_SessionId=blrn4usmvhcoc3xq1falr1ue; __RequestVerificationToken_L1JTUGxhdGZvcm01=mThD1-A7G14u1YQAuoCjASKKz98Q1calZuKL2dK2fDwKIZ_o2DLPs39tNVD1kybIlxkIArhteAUgHUigHj7NWPEP-N01j2bP_bWt1xmBqy5dLsRFEmaT_bB-Pdd6UOeQtsRyBu1ehgbjbWZyyFXPRg2; __RequestVerificationToken=KhtQS17Z5TqeZuP36aZqs7os0Bd6fV3Ke0T9tEgjnxmkTy3UyU3YvqXnkl4tsLH62cG7mgcLdyOL6Xa_rPyL2RpyrWZUuPDEYPYAXSLEwYg1; .ASPXAUTH=EFAA18B3515B0819CDFDCC52D033A6B0A717303EE60ADD463001B65E8440FD7E401F98F1ADEC2C84A9606B6A30FB55DF79B0BA261FD84B9E2A7B770719E1789792E75A2AE3C26544AFADC4FBBB9E67405A70184A02C939A243C750AF1B05BDF4&#xD;&#xA;Host: localhost&#xD;&#xA;User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.56 Safari/537.36&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/1/ROOT/ExcellaLean" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="C:\Dev\GitHub\LeanEnterpriseArchitecture\Excella.Lean.Web\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="*****" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="off" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="1" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/1" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/ExcellaLean/" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="C:\Dev\GitHub\LeanEnterpriseArchitecture\Excella.Lean.Web\" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="::1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="53662" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/ExcellaLean/" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="80" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/7.5" />
+    </item>
+    <item name="URL">
+      <value string="/ExcellaLean/" />
+    </item>
+    <item name="HTTP_CACHE_CONTROL">
+      <value string="max-age=0" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="keep-alive" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip,deflate,sdch" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="en-US,en;q=0.8" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="ASP.NET_SessionId=blrn4usmvhcoc3xq1falr1ue; __RequestVerificationToken_L1JTUGxhdGZvcm01=mThD1-A7G14u1YQAuoCjASKKz98Q1calZuKL2dK2fDwKIZ_o2DLPs39tNVD1kybIlxkIArhteAUgHUigHj7NWPEP-N01j2bP_bWt1xmBqy5dLsRFEmaT_bB-Pdd6UOeQtsRyBu1ehgbjbWZyyFXPRg2; __RequestVerificationToken=KhtQS17Z5TqeZuP36aZqs7os0Bd6fV3Ke0T9tEgjnxmkTy3UyU3YvqXnkl4tsLH62cG7mgcLdyOL6Xa_rPyL2RpyrWZUuPDEYPYAXSLEwYg1; .ASPXAUTH=EFAA18B3515B0819CDFDCC52D033A6B0A717303EE60ADD463001B65E8440FD7E401F98F1ADEC2C84A9606B6A30FB55DF79B0BA261FD84B9E2A7B770719E1789792E75A2AE3C26544AFADC4FBBB9E67405A70184A02C939A243C750AF1B05BDF4" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.56 Safari/537.36" />
+    </item>
+  </serverVariables>
+  <cookies>
+    <item name="ASP.NET_SessionId">
+      <value string="blrn4usmvhcoc3xq1falr1ue" />
+    </item>
+    <item name="__RequestVerificationToken_L1JTUGxhdGZvcm01">
+      <value string="mThD1-A7G14u1YQAuoCjASKKz98Q1calZuKL2dK2fDwKIZ_o2DLPs39tNVD1kybIlxkIArhteAUgHUigHj7NWPEP-N01j2bP_bWt1xmBqy5dLsRFEmaT_bB-Pdd6UOeQtsRyBu1ehgbjbWZyyFXPRg2" />
+    </item>
+    <item name="__RequestVerificationToken">
+      <value string="KhtQS17Z5TqeZuP36aZqs7os0Bd6fV3Ke0T9tEgjnxmkTy3UyU3YvqXnkl4tsLH62cG7mgcLdyOL6Xa_rPyL2RpyrWZUuPDEYPYAXSLEwYg1" />
+    </item>
+    <item name=".ASPXAUTH">
+      <value string="EFAA18B3515B0819CDFDCC52D033A6B0A717303EE60ADD463001B65E8440FD7E401F98F1ADEC2C84A9606B6A30FB55DF79B0BA261FD84B9E2A7B770719E1789792E75A2AE3C26544AFADC4FBBB9E67405A70184A02C939A243C750AF1B05BDF4" />
+    </item>
+  </cookies>
+</error>

@@ -16,11 +16,11 @@
 
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<Models.Repositories.EventWebRepository>() 
-                .As<Models.Repositories.IEventWebRepository>();
-
             builder.RegisterType<Models.Contexts.EventWebContext>()
                 .As<Models.Contexts.IEventWebContext>();
+
+            builder.RegisterType<Models.Repositories.EventWebRepository>() 
+                .As<Models.Repositories.IEventWebRepository>();
 
             if (this.assembly != null)
             {

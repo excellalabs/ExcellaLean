@@ -12,16 +12,16 @@
     using Newtonsoft.Json.Linq;
 
     [BreezeController]
-    public class EventController : ApiController
+    public class EventsController : ApiController
     {
         private readonly IEventWebRepository eventWebRepository;
 
-        public EventController(IEventWebRepository eventWebRepository)
+        public EventsController(IEventWebRepository eventWebRepository)
         {
             this.eventWebRepository = eventWebRepository;
         }
 
-        // GET ~/api/Event/Events
+        // GET ~/api/Events/Events
         [HttpGet]
         public IQueryable<Event> Events()
         {
@@ -29,7 +29,7 @@
                 .OrderByDescending(t => t.Id);
         }
 
-        // GET ~/api/Event/Persons
+        // GET ~/api/Events/Persons
         [HttpGet]
         public IQueryable<Person> Persons()
         {
@@ -37,7 +37,7 @@
                 .OrderByDescending(t => t.Id);
         }
 
-        // GET ~/api/Event/ReservationResults
+        // GET ~/api/Events/ReservationResults
         [HttpGet]
         public IQueryable<ReservationResult> ReservationResults()
         {
@@ -45,14 +45,14 @@
                 .OrderByDescending(t => t.Id);
         }
 
-        // GET ~/api/Event/Metadata
+        // GET ~/api/Events/Metadata
         [HttpGet]
         public string Metadata()
         {
             return this.eventWebRepository.Metadata();
         }
 
-        // POST ~/api/Event/SaveChanges
+        // POST ~/api/Events/SaveChanges
         [HttpPost]
         public SaveResult SaveChanges(JObject saveBundle)
         {

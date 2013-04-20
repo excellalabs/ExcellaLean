@@ -225,7 +225,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Composition\WebModule.cs" />
     <Compile Include="Controllers\AatController.cs" />
-    <Compile Include="Controllers\EventController.cs" />
+    <Compile Include="Controllers\EventsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RequestController.cs">
       <SubType>Code</SubType>
@@ -316,6 +316,7 @@
     <Content Include="migrate.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="ReadMe.txt" />
     <Content Include="Scripts\app\modules\eventsModule\eventDetails\component.js" />
     <Content Include="Scripts\app\modules\eventsModule\eventDetails\eventDetails.css" />
     <Content Include="Scripts\app\modules\eventsModule\eventDetails\eventDetailsView.html" />
