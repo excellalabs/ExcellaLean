@@ -82,6 +82,7 @@
                 switch (ei.EntityState)
                 {
                     // TODO: code to determine entity's type, and therefore call the right one, needs to go around here somewhere i think? sorry doguhan
+                    // TODO: not a trivial change, will fix this
                     case EntityState.Added:
                         this.RepositoryStore.Add(record);
                         this.AddMapping(ei.Entity.GetType(), record.Id);
