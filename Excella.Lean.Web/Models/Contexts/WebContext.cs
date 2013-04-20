@@ -8,8 +8,30 @@
     using Breeze.WebApi;
 
     using Excella.Lean.Core;
-    using Excella.Lean.Domain.Shared;
-    using Excella.Lean.Domain.Events;
+
+    using EntityState = Breeze.WebApi.EntityState;
+
+    public struct EntityMetadata
+    {
+        // ReSharper disable ConvertToAutoProperty - FxCop warning CA1051 - Do not declare visible instance fields
+        private Type key;
+
+        private ILeanService domainService;
+
+        public Type Key
+        {
+            get { return this.key; }
+            set { this.key = value; }
+        }
+
+        public ILeanService DomainService
+        {
+            get { return this.domainService; }
+            set { this.domainService = value; }
+        }
+        // ReSharper restore ConvertToAutoProperty
+    }
+
 
     public abstract class WebContext
     {
@@ -17,31 +39,7 @@
 
         private readonly List<KeyMapping> keyMappings = new List<KeyMapping>();
 
-        private readonly IPersonService personService;
-
-        private readonly IEventService eventService;
-
-        protected WebContext(IPersonService personService, IEventService eventService)
-        {
-            this.personService = personService;
-            this.eventService = eventService;
-        }
-
-        protected IPersonService PersonService
-        {
-            get
-            {
-                return this.personService;
-            }
-        }
-
-        protected IEventService EventService
-        {
-            get
-            {
-                return this.eventService;
-            }
-        }
+        protected abstract Dictionary<Type, EntityMetadata> DomainServiceMapping { get; }
 
         public static object GetDefault(Type type)
         {
@@ -79,27 +77,19 @@
 
                 var record = ei.Entity as EntityBase;
 
-                switch (ei.EntityState)
+                var service = this.DomainServiceMapping[ei.Entity.GetType()].DomainService;
+
+                var keyType = this.DomainServiceMapping[ei.Entity.GetType()].Key;
+
+                if (ei.EntityState == EntityState.Added || ei.EntityState == EntityState.Modified)
                 {
-                    // TODO: code to determine entity's type, and therefore call the right one, needs to go around here somewhere i think? sorry doguhan
-                    // TODO: not a trivial change, will fix this
-                    case EntityState.Added:
-                        this.RepositoryStore.Add(record);
-                        this.AddMapping(ei.Entity.GetType(), record.Id);
-                        break;
-                    case EntityState.Modified:
-                        this.RepositoryStore.Update(record);
-                        break;
-                    case EntityState.Deleted:
-                        this.RepositoryStore.Delete(record);
-                        break;
-                    default:
-                        break;
+                    service.AddUpdate(record);
+                }
+                else if (ei.EntityState == EntityState.Deleted)
+                {
+                    service.Remove(record);   
                 }
             }
-
-            this.personService.SaveAllChanges();
-            this.eventService.SaveAllChanges();
         }
 
         private void AddMapping<TKey>(Type type, TKey recordId)

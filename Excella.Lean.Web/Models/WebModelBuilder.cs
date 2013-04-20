@@ -1,6 +1,7 @@
 ﻿namespace Excella.Lean.Web.Models
 {
     using Excella.Lean.Core.Models.Events;
+    using Excella.Lean.Core.Models.Shared;
 
     public static class MetadataModelBuilder
     {
@@ -8,6 +9,8 @@
         {
             // Note: Only use concrete types.
             modelBuilder.Entity<Event>();
+            modelBuilder.Entity<Person>();
+            modelBuilder.Entity<ReservationResult>();
         }
     }
 }

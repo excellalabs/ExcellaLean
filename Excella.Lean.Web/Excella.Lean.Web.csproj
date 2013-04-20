@@ -225,6 +225,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Composition\WebModule.cs" />
     <Compile Include="Controllers\AatController.cs" />
+    <Compile Include="Controllers\EventController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RequestController.cs">
       <SubType>Code</SubType>
@@ -235,8 +236,12 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Aat\Inputs.cs" />
+    <Compile Include="Models\Contexts\IEventWebContext.cs" />
+    <Compile Include="Models\Contexts\EventWebContext.cs" />
     <Compile Include="Models\Contexts\WebContext.cs" />
     <Compile Include="Models\Contexts\IWebContext.cs" />
+    <Compile Include="Models\Repositories\IEventWebRepository.cs" />
+    <Compile Include="Models\Repositories\EventWebRepository.cs" />
     <Compile Include="Models\Repositories\IContextProvider.cs" />
     <Compile Include="Models\Repositories\IWebRepository.cs" />
     <Compile Include="Models\Repositories\MetadataWebRepository.cs" />

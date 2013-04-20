@@ -4,21 +4,20 @@
 
     using Excella.Lean.Core.Models.Events;
     using Excella.Lean.Dal;
+    using Excella.Lean.Domain.Shared.Impl;
 
-    public class EventService
+    public class EventService : ServiceBase, IEventService
     {
-        private readonly ILeanDatabase database;
-
         public EventService(ILeanDatabase database)
+            : base(database)
         {
-            this.database = database;
         }
 
         public IQueryable<Event> Events
         {
             get
             {
-                return this.database.Events;
+                return this.Database.GetAll<Event>();
             }
         }
 
@@ -26,7 +25,7 @@
         {
             get
             {
-                return this.database.ReservationRequests;
+                return this.Database.GetAll<ReservationRequest>();
             }
         }
 
@@ -34,13 +33,8 @@
         {
             get
             {
-                return this.database.ReservationResults;
+                return this.Database.GetAll<ReservationResult>();
             }
-        }
-
-        public void SaveAllChanges()
-        {
-            this.database.SaveAllChanges();
         }
     }
 }

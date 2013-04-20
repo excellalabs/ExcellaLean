@@ -84,6 +84,7 @@
     <Compile Include="EntityBase.cs" />
     <Compile Include="Exceptions\LeanException.cs" />
     <Compile Include="IEntity.cs" />
+    <Compile Include="ILeanService.cs" />
     <Compile Include="Models\Events\ReservationRequest.cs" />
     <Compile Include="Models\Events\ReservationResult.cs" />
     <Compile Include="Models\Events\Event.cs" />

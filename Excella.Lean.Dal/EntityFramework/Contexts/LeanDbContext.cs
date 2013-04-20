@@ -14,7 +14,7 @@
     using Excella.Lean.Core;
     using Excella.Lean.Dal.EntityFramework.Mapping;
 
-    public partial class LeanDatabase : DbContext, ILeanDatabase
+    public class LeanDatabase : DbContext, ILeanDatabase
     {
         private bool disposedValue;
 
@@ -30,102 +30,40 @@
             //this.Configuration.ProxyCreationEnabled = false;
         }
 
-        public IQueryable<TEntity> Select<TEntity>() where TEntity : class, IEntity
-        {
-            return this.Set<TEntity>();
-        }
-
         public IQueryable<TEntity> GetAll<TEntity>() where TEntity : class, IEntity
         {
             return this.Set<TEntity>();
         }
 
-        public IQueryable<TEntity> Where<TEntity>(Expression<Func<TEntity, bool>> predicate) where TEntity : class, IEntity
-        {
-            return this.Set<TEntity>().Where(predicate);
-        }
-
-        public TEntity GetSingle<TEntity>(Expression<Func<TEntity, bool>> predicate) where TEntity : class, IEntity
-        {
-            return this.Set<TEntity>().SingleOrDefault(predicate);
-        }
-
-        public TEntity GetFirst<TEntity>(Expression<Func<TEntity, bool>> predicate) where TEntity : class, IEntity
-        {
-            return this.Set<TEntity>().First(predicate);
-        }
-        
-        public void Save<TEntity>(TEntity entity) where TEntity : class, IEntity
+        public bool AddUpdate<TEntity>(TEntity entity) where TEntity : class, IEntity
         {
             if (entity == null)
             {
                 throw new ArgumentException("Cannot add a null entity");
             }
 
-            try
+            var id = entity.Id;
+
+            if (this.Entry(entity).State == EntityState.Detached)
             {
-                var id = entity.Id;
+                var attachedEntity = this.Set(entity.GetType()).Find(id);
+                var isFound = attachedEntity != null;
 
-                if (this.Entry(entity).State == EntityState.Detached)
+                if (isFound)
                 {
-                    var attachedEntity = this.Set(entity.GetType()).Find(id);
-                    var isFound = attachedEntity != null;
-
-                    if (isFound)
-                    {
-                        this.Entry(attachedEntity).CurrentValues.SetValues(entity);
-                    }
-
-                    if (!isFound)
-                    {
-                        var set = this.Set(entity.GetType());
-                        set.Add(entity);
-                    }
+                    this.Entry(attachedEntity).CurrentValues.SetValues(entity);
                 }
-
-                this.SaveChanges();
-            }
-            catch (DbEntityValidationException ex)
-            {
-                foreach (var validationErrors in ex.EntityValidationErrors)
+                else
                 {
-                    foreach (var validationError in validationErrors.ValidationErrors)
-                    {
-                        Trace.TraceInformation("Property: {0} Error: {1}", validationError.PropertyName, validationError.ErrorMessage);
-                    }
+                    var set = this.Set(entity.GetType());
+                    set.Add(entity);
                 }
-
-                throw;
             }
+
+            return true;
         }
 
-        public void Save<TEntity>(IList<TEntity> entities) where TEntity : class, IEntity
-        {
-            if (entities == null || !entities.Any())
-            {
-                throw new ArgumentException("Cannot add a null entity");
-            }
-
-            try
-            {
-                ICollection<TEntity> collection = new Collection<TEntity>(entities);
-                //this.HierarchicalSaveCollection(collection);
-            }
-            catch (DbEntityValidationException ex)
-            {
-                foreach (var validationErrors in ex.EntityValidationErrors)
-                {
-                    foreach (var validationError in validationErrors.ValidationErrors)
-                    {
-                        Trace.TraceInformation("Property: {0} Error: {1}", validationError.PropertyName, validationError.ErrorMessage);
-                    }
-                }
-
-                throw;
-            }
-        }
-
-        public void Delete<TEntity>(TEntity entity) where TEntity : class, IEntity
+        public bool Remove<TEntity>(TEntity entity) where TEntity : class, IEntity
         {
             if (entity == null)
             {
@@ -138,58 +76,18 @@
             if (attachedEntity != null && this.Entry(attachedEntity).State != EntityState.Deleted)
             {
                 set.Remove(attachedEntity);
-            }
-            else
-            {
-                throw new ArgumentException("Could not delete entity because the Id could not be found or the entity does not exist.", "entity");
+                return true;
             }
 
-            this.SaveChanges();
+            return false;
         }
 
-        public void Attach<TEntity>(TEntity entity) where TEntity : class, IEntity
+        public int SaveAllChanges()
         {
-            if (entity == null)
-            {
-                throw new ArgumentException("Cannot attach a null entity");
-            }
-
-            this.Set<TEntity>().Attach(entity);
+            return this.SaveChanges();
         }
 
-        public void Add(IEntity entity)
-        {
-            if (entity == null)
-            {
-                throw new ArgumentException("Cannot add a null entity");
-            }
-
-            var set = this.Set(entity.GetType());
-            set.Add(entity);
-        }
-
-        public void Update(IEntity entity)
-        {
-            if (entity == null)
-            {
-                throw new ArgumentException("Cannot add a null entity");
-            }
-
-            var id = entity.Id;
-
-            if (this.Entry(entity).State == EntityState.Detached)
-            {
-                var attachedEntity = this.Set(entity.GetType()).Find(id);
-                this.Entry(attachedEntity).CurrentValues.SetValues(entity);
-            }
-        }
-
-        public void SaveAllChanges()
-        {
-            this.SaveChanges();
-        }
-
-        public void Dispose(bool disposing)
+        public new void Dispose(bool disposing)
         {
             if (!this.disposedValue)
             {
@@ -204,7 +102,7 @@
             this.disposedValue = true;
         }
 
-        public void Dispose()
+        public new void Dispose()
         {
             this.Dispose(true);
             GC.SuppressFinalize(this);

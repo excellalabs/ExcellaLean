@@ -62,10 +62,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EntityFramework\Contexts\EventContext.cs" />
-    <Compile Include="EntityFramework\Contexts\PersonContext.cs" />
     <Compile Include="EntityFramework\Contexts\LeanDbContext.cs" />
-    <Compile Include="EntityFramework\Contexts\ReseverationContext.cs" />
     <Compile Include="EntityFramework\Mapping\ReservationRequestMap.cs" />
     <Compile Include="EntityFramework\Mapping\ReservationResultMap.cs" />
     <Compile Include="EntityFramework\Mapping\PersonMap.cs" />

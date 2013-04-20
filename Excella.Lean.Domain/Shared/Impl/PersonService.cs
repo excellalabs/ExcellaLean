@@ -2,30 +2,22 @@
 {
     using System.Linq;
 
-    using Excella.Lean.Core.Models.Events;
-    using Excella.Lean.Dal;
     using Excella.Lean.Core.Models.Shared;
+    using Excella.Lean.Dal;
 
-    public class PersonService
+    public class PersonService : ServiceBase, IPersonService
     {
-        private readonly ILeanDatabase database;
-
         public PersonService(ILeanDatabase database)
+            : base(database)
         {
-            this.database = database;
         }
 
         public IQueryable<Person> Persons
         {
             get
             {
-                return this.database.Persons;
+                return this.Database.GetAll<Person>();
             }
-        }
-
-        public void SaveAllChanges()
-        {
-            this.database.SaveAllChanges();
         }
     }
 }

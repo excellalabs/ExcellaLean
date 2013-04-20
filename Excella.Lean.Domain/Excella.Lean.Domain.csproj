@@ -102,6 +102,7 @@
     <Compile Include="Shared\Impl\PersonService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Shared\Impl\ServiceBase.cs" />
     <Compile Include="Shared\IPersonService.cs" />
   </ItemGroup>
   <ItemGroup>
