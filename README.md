@@ -1,4 +1,4 @@
-> Get a quick jump start: https://github.com/excellaco/ExcellaLean/wiki/Getting-Started
+> Get a jump start: https://github.com/excellaco/ExcellaLean/wiki/Getting-Started
 
 Excella Lean
 ============
